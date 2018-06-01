@@ -18,10 +18,15 @@
     "build": "webpack --config ./client/webpack.config.js",
     "test": "jest test/client test/server"
   },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.14.0",
-    "supertest": "^3.0.0"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -35,7 +40,11 @@
     "nodemon": "^1.17.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
     "react-router-dom": "^4.2.2",
+    "supertest": "^3.0.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   }
