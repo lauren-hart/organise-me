@@ -4,14 +4,13 @@ class About extends React.Component {
   render() {
     return (
       <div className='page-section'>
-      
-        <div className='page-heading-section'>
-          <div className='page-title'>
-            <h3>about</h3>
-          </div>
-        </div>
 
         <div className='page-content'>
+          <div className='page-blurb'>
+            <p>Heya!.</p>
+            <p>I'm a web developer based in Auckland.</p>
+            <p>I love to create web apps and broaden my skill set.</p>
+          </div>
         </div>
 
       </div>
