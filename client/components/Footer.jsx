@@ -1,12 +1,13 @@
 import React from 'react'
 
+import Contact from './Contact'
+
 const Footer = () => {
   return (
     <div className='footer-box'>
 
       <div classname='footer-content'>
-        <p>Would you like to chat?</p>
-        <button className=''>yes, please!</button>
+        <Contact />
       </div>
 
       <div className='footer-copyright'>
