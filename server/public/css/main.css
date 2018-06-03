@@ -1,8 +1,8 @@
 /* SITEWIDE STYLING */
 
 body {
-  font-family: sans-serif;
-  background-color: #ffaab0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e0f7fa;
   color: black;
   background-repeat: no-repeat;
   background-size: auto 100%; 
@@ -16,14 +16,9 @@ body {
 
 /* Encompasses all components in App */
 .app-box {
-  margin: 10px 60px;
+  margin: 10px 30px;
   margin-bottom: -30px;
   min-height: 720px;
-}
-
-.app-box:after {
-  content: "";
-  display: block;
 }
 
 /* This is the box encompassing everyting on all content pages */
@@ -32,11 +27,12 @@ body {
 }
 
 .page-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 3.2em;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-align: center;
   margin: 1em 0 0.5em 0;
-  text-shadow: 0 0 10px #ba6b6c;
+  text-shadow: 0 0 10px #7e9395;
 }
 
 /* Creates plain text style links */
@@ -49,8 +45,8 @@ a {
 
 button {
   color: white;
-  background-color: #ffcccb;
-  box-shadow: 0 0 2px #ba6b6c;
+  background-color: #7e9395;
+  box-shadow: 0 0 2px #7e9395;
   letter-spacing: 1px;
   border: none;
   font-weight: 600;
@@ -65,7 +61,7 @@ button {
 
 /* Hover colour on generic buttons */
 button:hover {
-  background-color: #ba6b6c;
+  background-color: #97b498;
 }
 
 
@@ -106,7 +102,7 @@ button:hover {
   letter-spacing: 2px;
   text-align: center;
   margin: 1em 0 0.5em 0;
-  text-shadow: 0 0 10px #ca7a81;
+  text-shadow: 0 0 10px #7e9395;
   font-weight: bold;
 }
 
@@ -125,7 +121,7 @@ button:hover {
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
-  background-color: #ca7a81;
+  background-color: #7e9395;
   padding: 20px;
 }
 
@@ -136,26 +132,75 @@ button:hover {
 
 .nav-links {
   color: black;
+  font-weight: bold;
 }
 
 .nav-link-individual-styling {
-  padding: 15px;
+  padding: 15px 15px 19px 15px;
+  /* padding-bottom: 19px; */
   font-size: 13px;
   letter-spacing: 2px;
+  
+
 }
 
+.nav-link-individual-styling:hover {
+  /* theme 1 blue */
+  background-color: #97b498;
+
+  border-bottom: #c8e6c9 solid 3px;
+}
+
+/* PORTFOLIO */
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.img-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img-column img {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 /* FOOTER */
 
 .footer-box {
   width: 100%;
-  background-color: #ca7a81;
+  background-color: #7e9395;
   padding: 20px;
 }
 
 .footer-content {
   text-align: center;
   font-size: 11px;
+  font-weight: bold;
   bottom: 0;
 }
 
