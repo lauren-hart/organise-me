@@ -6,8 +6,7 @@ class Contact extends React.Component {
       <div className='page-section'>
 
         <div className='page-content'>
-        <p>Would you like to chat?</p>
-        <button className=''>yes, please!</button>
+          {/* email section here */}
         </div>
 
       </div>
