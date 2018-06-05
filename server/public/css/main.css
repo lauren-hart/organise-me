@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #e0f7fa;
+  background-color: white;
   color: black;
   background-repeat: no-repeat;
   background-size: auto 100%; 
@@ -16,14 +16,26 @@ body {
 
 /* Encompasses all components in App */
 .app-box {
-  margin: 10px 30px;
-  margin-bottom: -30px;
+  width: 100%;
   min-height: 720px;
+  padding-bottom: 0.5em;
 }
 
-/* This is the box encompassing everyting on all content pages */
-.page-section {
-  margin: 4em 16%;
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* PAGE SECTION STYLES*/
+
+/* .page-section {
+} */
+
+.page-heading-section {
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0.5em 0;
 }
 
 .page-title {
@@ -31,14 +43,34 @@ body {
   font-size: 3.2em;
   letter-spacing: 3px;
   text-align: center;
-  margin: 1em 0 0.5em 0;
   text-shadow: 0 0 10px #7e9395;
+  padding: 0.5em;
 }
 
-/* Creates plain text style links */
-a {
-  text-decoration: none;
-  color: black;
+/* title font */
+/* .page-title-font {
+  font-size: 3.2em;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 0 10px #7e9395;
+  font-weight: bold;
+  padding: 2em;
+  margin: 1em 0 0.5em 0;
+} */
+
+.page-welcome {
+  padding: 0.5em;
+}
+
+/* .page-content {
+} */
+
+/* .page-blurb {
+} */
+
+/* paragraph/blurb fonts */
+.p-class {
+  margin: 1px;
 }
 
 /* BUTTON STYLING */
@@ -52,11 +84,11 @@ button {
   font-weight: 600;
   text-decoration: none;
   font-size: 12px;
-  border-radius: 4px;
-  margin-top: 35px;
-  padding: 15px 25px;
   text-align: center;
   cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 4px;
+  margin-top: 35px;
 }
 
 /* Hover colour on generic buttons */
@@ -65,9 +97,9 @@ button:hover {
 }
 
 
-/* SCREEN SIZE CHANGES */
+/* RESPONSIVE - SCREEN SIZE CHANGES */
 
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   .page-section {
       margin-left: 0.5em;
       margin-right: 0.5em;
@@ -87,80 +119,98 @@ button:hover {
       margin-left: 0;
       margin-right: 0;
   }
-}
-
-/* This is the box encompassing the header and blurb on each page. */
-.page-heading-section {
-  margin: 3em  0 3em 0;
-  justify-content: center;
-  align-items: center;
-}
-
-/* This is the title font on all content pages */
-.page-title-font {
-  font-size: 3.2em;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 1em 0 0.5em 0;
-  text-shadow: 0 0 10px #7e9395;
-  font-weight: bold;
-}
-
-/* This is the body font on all pages. */
-.p-class {
-  margin: 1px;
-}
+} */
 
 
-/* NAV */
+/* HEADER / NAV */
 
-/* Encompasses everything in the Nav component */
-.nav-header {
-  display: flex;
+.header-content {
+  display: inline-flex;
   flex-direction: row; 
   flex-wrap: nowrap;
-  justify-content: space-between;
   width: 100%;
   background-color: #7e9395;
-  padding: 20px;
+  padding: 0.5em;
 }
 
-/* Box around just the logo div in the Nav component*/
-.nav-logo {
-  display: flex;
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
+
+.nav {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
 }
 
 .nav-links {
   color: black;
   font-weight: bold;
+  justify-content: flex-end;
 }
 
 .nav-link-individual-styling {
-  padding: 15px 15px 19px 15px;
   /* padding-bottom: 19px; */
   font-size: 13px;
   letter-spacing: 2px;
-  
-
+  padding: 15px 15px 19px 15px;
 }
 
 .nav-link-individual-styling:hover {
   /* theme 1 blue */
   background-color: #97b498;
-
   border-bottom: #c8e6c9 solid 3px;
 }
 
+/* ABOUT */
+
 /* PORTFOLIO */
 
-.img-row {
+.work-shots {
+  width: 100%;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  width: 100%;
+  padding: 2em;
+  border: 4px;
+}
+
+.work-shots .shot {
+  max-width: 800px;
+  z-index: 990;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.work-shots .shot-info {
+  max-width: 800px;
+  z-index: 990;
+  text-align: center;
+  color: azure;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+/* Colour blocks for each work shot */
+#marama {
+  background: #370566;
+}
+
+#work2 {
+  background: #97b498;
+}
+
+#work3 {
+  background: #F4A0A0;
 }
 
 /* Create four equal columns that sits next to each other */
-.img-column {
+/* .img-column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -171,7 +221,7 @@ button:hover {
   height: auto;
   margin-top: 8px;
   vertical-align: middle;
-}
+} */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -189,21 +239,38 @@ button:hover {
   }
 }
 
+
+/* CONTACT */
+
+
+
 /* FOOTER */
 
 .footer-box {
   width: 100%;
-  background-color: #7e9395;
-  padding: 20px;
 }
 
-.footer-content {
+.footer-contact {
+  background: white;
   text-align: center;
   font-size: 11px;
   font-weight: bold;
   bottom: 0;
+  padding: 2em;
 }
 
-.sticky-footer, .app-box:after {
-  height: 30px;
+.contact-button {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  bottom: 0;
+  padding: 2em;
 }
+
+.footer-copyright {
+  background: #7e9395;
+  padding: 2em;
+}
+/* .sticky-footer, .app-box:after {
+  height: 30px;
+} */
