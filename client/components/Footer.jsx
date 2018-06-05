@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='footer-box'>
+    <div className='footer-container'>
 
         <div className='footer-contact'>
-          <p>Would you like to chat?</p>
+          <h2>Would you like to chat?</h2>
+          <p></p>
           <Link to='/email-emily'>
-            <button className='contact-button'>yes, please!</button>
+            <button className='contact-button'>message me</button>
           </Link>
         </div>
 
