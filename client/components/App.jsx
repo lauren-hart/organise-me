@@ -23,10 +23,8 @@ class App extends React.Component {
             {/* <Route path='/contact' component={Contact} /> */}
           </Switch>
         </div>
-        
-        <div className='sticky-footer'>
-          <Footer />
-        </div>
+
+        <Footer />
       </div>
     )
   }
