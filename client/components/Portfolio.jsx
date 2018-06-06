@@ -16,7 +16,7 @@ class Portfolio extends React.Component {
           <div id='marama' className='work-shots'>
             <div className='container'>
               <div className='shot'>
-                <img src='images/marama-darkest.png' /></div>
+                <img className='shot-img' src='images/marama-darkest.png' /></div>
               <div className='shot-info'>
                 <h2>Mārama</h2>
                 <h3>Full Stack Development</h3>
@@ -28,7 +28,7 @@ class Portfolio extends React.Component {
           <div id='work2' className='work-shots'>
             <div className='container'>
               <div className='shot'>
-                <img src='images/graphic.jpg' /></div>
+                <img className='shot-img' src='images/graphic.jpg' /></div>
               <div className='shot-info'>
                 <h2>Work 2</h2>
                 <h3>Full Stack Development</h3>
@@ -40,7 +40,7 @@ class Portfolio extends React.Component {
           <div id='work3' className='work-shots'>
             <div className='container'>
               <div className='shot'>
-                <img src='images/graphic.jpg' /></div>
+                <img className='shot-img' src='images/graphic.jpg' /></div>
               <div className='shot-info'>
                 <h2>Work 3</h2>
                 <h3>Full Stack Development</h3>
