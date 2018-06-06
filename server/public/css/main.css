@@ -188,6 +188,11 @@ button:hover {
   margin: 0 auto;
 }
 
+.work-shots .shot-img {
+  max-width: 100%;
+  height: auto;
+}
+
 .work-shots .shot-info {
   max-width: 800px;
   z-index: 990;
