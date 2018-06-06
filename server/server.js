@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const server = express()
 server.use(express.static(path.join(__dirname, 'public')))
 server.use(bodyParser.json())
+// Allows express how to read the body
 
 // these are the routes we have created
 
