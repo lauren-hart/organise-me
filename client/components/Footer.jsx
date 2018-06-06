@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className='copyright'>
-          {' '} 2018 {' '}
+          © {' '} 2018 {' '}
           <Link to='/'>
             emily coco
           </Link>.{' '}All rights reserved.
