@@ -18,13 +18,12 @@ body {
 .app-box {
   width: 100%;
   min-height: 720px;
-  padding-bottom: 0.5em;
+  /* padding-bottom: 0.5em; */
 }
 
 /* Links */
 a {
   text-decoration: none;
-  color: black;
 }
 
 /* PAGE SECTION STYLES*/
@@ -67,11 +66,6 @@ a {
 
 /* .page-blurb {
 } */
-
-/* paragraph/blurb fonts */
-.p-class {
-  margin: 1px;
-}
 
 /* BUTTON STYLING */
 
@@ -124,13 +118,14 @@ button:hover {
 
 /* HEADER / NAV */
 
-.header-content {
+.header {
   display: inline-flex;
   flex-direction: row; 
   flex-wrap: nowrap;
+  align-content: space-between;
   width: 100%;
   background-color: #7e9395;
-  padding: 0.5em;
+  /* padding: 0.5em; */
 }
 
 .logo {
@@ -142,26 +137,32 @@ button:hover {
 
 .nav {
   width: 100%;
-  padding: 20px 0px 20px 0px;
+  padding: 15px 0px 15px 0px;
+  margin-right: 20px;
 }
 
 .nav-links {
   color: black;
   font-weight: bold;
   justify-content: flex-end;
+  position: relative;
+  float: right;
+  margin-right: 0.5em;
 }
 
 .nav-link-individual-styling {
   /* padding-bottom: 19px; */
   font-size: 13px;
   letter-spacing: 2px;
-  padding: 15px 15px 19px 15px;
+  padding: 10px;
+  margin: 3px;
 }
 
 .nav-link-individual-styling:hover {
   /* theme 1 blue */
   background-color: #97b498;
-  border-bottom: #c8e6c9 solid 3px;
+  border-radius: 5%;
+  /* border-bottom: #c8e6c9 solid 3px; */
 }
 
 /* ABOUT */
@@ -246,8 +247,13 @@ button:hover {
 
 /* FOOTER */
 
-.footer-box {
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
+  padding-top: 2em;
+  border: 4px;
 }
 
 .footer-contact {
@@ -255,9 +261,30 @@ button:hover {
   text-align: center;
   font-size: 11px;
   font-weight: bold;
-  bottom: 0;
+  max-width: 800px;
+  z-index: 990;
+  text-align: center;
   padding: 2em;
+  margin: 0 auto;
 }
+
+#contact-emily h2 {
+  color: #1e836c;
+  text-align: center;
+  font-size: 3.8em;
+  font-weight: 400;
+  /* padding: 10px; */
+}
+
+#contact-emily p {
+  font-size: 1.5em;
+  color: #45b29a;
+}
+
+/* p {
+    margin: 0 0 10px;
+    font-weight: 300;
+} */
 
 .contact-button {
   text-align: center;
@@ -265,12 +292,45 @@ button:hover {
   font-weight: bold;
   bottom: 0;
   padding: 2em;
+  margin-bottom: 35px;
 }
 
-.footer-copyright {
+.footer-colour-block {
   background: #7e9395;
   padding: 2em;
 }
-/* .sticky-footer, .app-box:after {
-  height: 30px;
-} */
+
+.footer-links {
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-content: space-between;
+  color: white;
+  padding: 2em;
+}
+
+#two.row {
+  height: 44px;
+}
+
+.footer-link-individual-styling {
+  padding: 1em;
+}
+.footer-link-individual-styling a {
+  color: white;
+  padding: 1em;
+}
+.footer-link-individual-styling a:hover {
+  color: aqua;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  padding: 2em;
+}
+.copyright a {
+  color: white;
+}
+
+
