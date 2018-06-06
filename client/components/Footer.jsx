@@ -12,7 +12,7 @@ const Footer = () => {
           <button className='contact-button'>
             <Link className='email-link' to='/email-emily'>
               <img className='email-img' src='/icons/email-icon.png' height='20px' />
-              message me
+              {' '} {' '} message me
             </Link>
           </button>
 
@@ -53,10 +53,10 @@ const Footer = () => {
         </div>
 
         <div className='copyright'>
-          &copy; 2018&nbsp;
+          {' '} 2018 {' '}
           <Link to='/'>
             emily coco
-          </Link>.&nbsp;All rights reserved.
+          </Link>.{' '}All rights reserved.
           </div>
       </div>
 
