@@ -5,7 +5,7 @@ import Nav from './Nav'
 
 const Header = () => {
   return (
-    <div className='header-content'>
+    <div className='header'>
       <div className='logo'>
         <Link to='/'>
           <img src='/images/logo.png' className='logo' />
