@@ -288,12 +288,54 @@ button:hover {
 
 .contact-button {
   text-align: center;
-  font-size: 11px;
-  font-weight: bold;
   bottom: 0;
+  width: 40em;
   padding: 2em;
   margin-bottom: 35px;
 }
+
+.email-link {
+  width: 200px;
+  text-align: center;
+}
+
+img.email-image {
+  margin-right: 2em;
+}
+/* .contact-button  {
+  font-size: 11px;
+  font-weight: bold;
+} */
+
+/* .email-link {
+
+} */
+
+/* .contact-button {
+  font-size: .8em;
+  text-align: center;
+  display: block;
+  position: relative;
+  background: #45b29a;
+  padding: .75em 2em .75em 3.5em;
+  color: #1b7f69;
+  text-decoration: none;
+  margin: 1.5em 0 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-weight: 400;
+  border: 0;
+  
+} */
+
+/* .contact-button .email-img {
+  position: absolute;
+  height: 15px;
+  width: 24px;
+  left: 11%;
+  top: 33%;
+} */
 
 .footer-colour-block {
   background: #7e9395;
