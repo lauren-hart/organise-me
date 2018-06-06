@@ -8,9 +8,14 @@ const Footer = () => {
       <div id='contact-emily' className='footer-contact'>
         <h2>Would you like to chat?</h2>
         <p>Send me an email and we can talk.</p>
-        <Link to='/email-emily'>
-          <button className='contact-button'>message me</button>
-        </Link>
+
+          <button className='contact-button'>
+            <Link className='email-link' to='/email-emily'>
+              <img className='email-img' src='/icons/email-icon.png' height='20px' />
+              message me
+            </Link>
+          </button>
+
       </div>
 
       <div className='footer-colour-block'>
@@ -19,13 +24,13 @@ const Footer = () => {
           <div className='row' id='one'>
           <span className='footer-link-individual-styling'>
             <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
-              <img className='icon' src='/images/linkedin-icon.png' height='40px' />
+              <img className='icon' src='/icons/linkedin-icon.png' height='40px' />
             </a>
           </span>
 
           <span className='footer-link-individual-styling'>
             <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
-              <img className='icon' src='/images/github-icon.png' height='40px' />
+              <img className='icon' src='/icons/github-icon.png' height='40px' />
             </a>
           </span>
           </div>
