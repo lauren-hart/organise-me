@@ -1,3 +1,44 @@
+/* RESPONSIVE MEDIA QUERIES */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  max-width: 750px; 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
+
+
+
 /* SITEWIDE STYLING */
 
 body {
@@ -229,22 +270,6 @@ button:hover {
   vertical-align: middle;
 } */
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 
 /* CONTACT */
 
@@ -257,31 +282,31 @@ button:hover {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 2em;
   border: 4px;
 }
 
-.footer-contact {
-  background: white;
+#message-me {
   text-align: center;
-  font-size: 11px;
-  font-weight: bold;
-  max-width: 800px;
-  z-index: 990;
-  text-align: center;
-  padding: 2em;
-  margin: 0 auto;
+  padding: 0 0 4em;
 }
 
-#contact-emily h2 {
+#message-me .container {
+  text-align: center;
+  flex-direction: row;
+}
+
+#message-me .row{
+  margin: auto;
+}
+
+.chat-blurb h2 {
   color: #1e836c;
-  text-align: center;
-  font-size: 3.8em;
   font-weight: 400;
-  /* padding: 10px; */
+  font-size: 2.5em;
+  padding: 10px;
 }
 
-#contact-emily p {
+.chat-blurb p {
   font-size: 1.5em;
   color: #45b29a;
 }
@@ -291,58 +316,44 @@ button:hover {
     font-weight: 300;
 } */
 
-.contact-button {
-  text-align: center;
-  bottom: 0;
-  width: 40em;
-  padding: 2em;
-  margin-bottom: 35px;
-}
-
-.email-link {
-  width: 200px;
-  text-align: center;
-}
-
-img.email-image {
-  margin-right: 2em;
-}
-/* .contact-button  {
-  font-size: 11px;
-  font-weight: bold;
-} */
 
 /* .email-link {
-
+  width: 200px;
+  text-align: center;
 } */
 
-/* .contact-button {
+/* BUTTON - MESSAGE ME */
+
+.btn-hldr .main-btn {
   font-size: .8em;
   text-align: center;
   display: block;
   position: relative;
-  background: #45b29a;
+  background: #7e9395;
   padding: .75em 2em .75em 3.5em;
-  color: #1b7f69;
+  color: white;
   text-decoration: none;
   margin: 1.5em 0 0;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   font-weight: 400;
   border: 0;
-  
-} */
+}
+.btn-hldr .main-btn:hover {
+  color: #fff;
+  background-color: #97b498;
+  border-color: #97b498;
+}
 
-/* .contact-button .email-img {
+.btn-hldr .main-btn .email-img {
   position: absolute;
-  height: 15px;
-  width: 24px;
+  height: 20px;
+  width: 26px;
   left: 11%;
   top: 33%;
-} */
+}
 
-.footer-colour-block {
+/* FOOTER COLOUR BLOCK */
+.container-fluid {
   background: #7e9395;
   padding: 2em;
 }
@@ -356,9 +367,9 @@ img.email-image {
   padding: 2em;
 }
 
-#two.row {
+/* #two.row {
   height: 44px;
-}
+} */
 
 .footer-link-individual-styling {
   padding: 1em;
