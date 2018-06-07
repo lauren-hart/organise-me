@@ -170,20 +170,35 @@ button:hover {
 }
 
 .logo {
+  font-weight: bold;
+  justify-content: flex-start;
+  position: relative;
   float: left;
-  width: 50px;
-  height: 50px;
-  padding: 2px;
+  margin-left: 0.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a.logo-link {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  font-size: 13px;
+  padding: 10px;
+  margin: 3px;
 }
 
 .nav {
   width: 100%;
-  padding: 15px 0px 15px 0px;
+  padding: 10px 0px 10px 0px;
   margin-right: 20px;
 }
 
-.nav-links {
-  color: black;
+.nav-item {
   font-weight: bold;
   justify-content: flex-end;
   position: relative;
@@ -191,19 +206,18 @@ button:hover {
   margin-right: 0.5em;
 }
 
-.nav-link-individual-styling {
-  /* padding-bottom: 19px; */
+.nav-link {
+  color: #fff;
   font-size: 13px;
   letter-spacing: 2px;
   padding: 10px;
   margin: 3px;
 }
-
-.nav-link-individual-styling:hover {
+.nav-link:hover {
   /* theme 1 blue */
+  color: aqua;
   background-color: #97b498;
   border-radius: 5%;
-  /* border-bottom: #c8e6c9 solid 3px; */
 }
 
 /* ABOUT */
