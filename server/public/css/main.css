@@ -75,7 +75,9 @@ a {
 .page-heading-section {
   justify-content: center;
   align-items: center;
-  margin: 0.5em 0 0.5em 0;
+  background-color: #5762D5;
+  padding: 10em 0 10em 0;
+  margin: 0em 0 0em 0;
 }
 
 .page-title {
@@ -112,8 +114,8 @@ a {
 
 button {
   color: white;
-  background-color: #7e9395;
-  box-shadow: 0 0 2px #7e9395;
+  background-color: #5762D5;
+  box-shadow: 0 0 2px #5762D5;
   letter-spacing: 1px;
   border: none;
   font-weight: 600;
@@ -165,7 +167,7 @@ button:hover {
   flex-wrap: nowrap;
   align-content: space-between;
   width: 100%;
-  background-color: #7e9395;
+  background-color: #5762D5;
   /* padding: 0.5em; */
 }
 
@@ -310,7 +312,7 @@ a.logo-link {
 }
 
 .chat-blurb h2 {
-  color: #1e836c;
+  color: #5762D5;
   font-weight: 400;
   font-size: 2.5em;
   padding: 10px;
@@ -339,7 +341,7 @@ a.logo-link {
   text-align: center;
   display: block;
   position: relative;
-  background: #7e9395;
+  background: #5762D5;
   padding: .75em 2em .75em 3.5em;
   color: white;
   text-decoration: none;
@@ -350,8 +352,8 @@ a.logo-link {
 }
 .btn-hldr .main-btn:hover {
   color: #fff;
-  background-color: #97b498;
-  border-color: #97b498;
+  background-color: #74b9e8;
+  border-color: #f384aa;
 }
 
 .btn-hldr .main-btn .email-img {
@@ -364,7 +366,7 @@ a.logo-link {
 
 /* FOOTER COLOUR BLOCK */
 .container-fluid {
-  background: #7e9395;
+  background: #5762D5;
   padding: 2em;
 }
 
