@@ -293,7 +293,7 @@ a.logo-link {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; --> this fixes footer links but de-centers message me */
   flex-wrap: wrap;
   width: 100%;
   border: 4px;
@@ -301,12 +301,8 @@ a.logo-link {
 
 #message-me {
   text-align: center;
-  padding: 0 0 4em;
-}
-
-#message-me .container {
-  text-align: center;
-  flex-direction: row;
+  padding: 1em 0 4em;
+  margin: auto;
 }
 
 #message-me .row{
@@ -372,27 +368,44 @@ a.logo-link {
   padding: 2em;
 }
 
-.footer-links {
+footer.row {
   flex-wrap: wrap;
-  flex-direction: row;
   text-align: center;
   align-content: space-between;
   color: white;
-  padding: 2em;
+  padding: 10px 0px 10px 0px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-/* #two.row {
-  height: 44px;
-} */
-
-.footer-link-individual-styling {
-  padding: 1em;
+.footer.justify-content-center {
+  margin: auto;
 }
-.footer-link-individual-styling a {
+
+.footer-item {
+  position: relative;
+  margin: auto;
+}
+
+#text-link.footer-item {
+  /* position: relative; */
+  padding-top: 10px;
+  /* margin: auto; */
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 0px 3px 0px 3px;
+}
+
+a.footer-link {
   color: white;
   padding: 1em;
 }
-.footer-link-individual-styling a:hover {
+a.footer-link:hover {
   color: aqua;
 }
 
@@ -403,6 +416,5 @@ a.logo-link {
 }
 .copyright a {
   color: white;
+  text-decoration: underline;
 }
-
-
