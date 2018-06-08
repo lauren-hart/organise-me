@@ -15,9 +15,9 @@ const Footer = () => {
                 <p>Send me an email and we can talk.</p>
 
                 <p className='btn-hldr'>
-                    <a href='mailto:emilycoco@me.com' className='main-btn email-lnk'>
-                      <img className='email-img' src='/icons/email-icon.png' height='20px' />
-                      {' '} {' '} message me
+                  <a href='mailto:emilycoco@me.com' className='main-btn email-lnk'>
+                    <img className='email-img' src='/icons/email-icon.png' height='20px' />
+                    {' '} {' '} message me
                     </a>
                 </p>
 
@@ -28,48 +28,48 @@ const Footer = () => {
       </section>
 
       <div className='container-fluid'>
-        <div className='footer-links'>
 
-          <div className='row' id='one'>
-            <span className='footer-link-individual-styling'>
-              <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
-                <img className='icon' src='/icons/linkedin-icon.png' height='40px' />
-              </a>
-            </span>
+        <footer className='row'>
+          <div className='footer justify-content-center'>
 
-            <span className='footer-link-individual-styling'>
-              <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
-                <img className='icon' src='/icons/github-icon.png' height='40px' />
-              </a>
-            </span>
+            <div className='footer-item'>
+              <div className='footer-link' >
+                <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src='/icons/linkedin-icon.png' height='40px' />
+                </a>
+              </div>
+            </div>
+
+            <div className='footer-item'>
+              <div className='footer-link'>
+                <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src='/icons/github-icon.png' height='40px' />
+                </a>
+              </div>
+            </div>
+
+
+            <div className='footer-item' id='text-link'>
+              <Link className='footer-link' to='/email-emily'>hire me</Link>
+            </div>
+
+            <div className='footer-item' id='text-link'>
+              <Link className='footer-link' to='/resume'>resume</Link>
+            </div>
+
           </div>
-
-          <br />
-
-          <div className='row' id='two'>
-            <span className='footer-link-individual-styling'>
-              {/* link to contact page */}
-              <Link to='/email-emily'>hire me
-            </Link>
-            </span>
-
-            <span className='footer-link-individual-styling'>
-              <Link to='/resume'>resume
-            </Link>
-            </span>
-          </div>
-
-        </div>
+        </footer>
 
         <div className='copyright'>
-          {' '} 2018 {' '}
-          <Link to='/'>
+          © {' '} 2018 {' '}
+          <Link className='copyr-link' to='/'>
             emily coco
           </Link>.{' '}All rights reserved.
           </div>
-      </div>
 
-    </div >
+      </div >
+
+    </div>
   )
 }
 
