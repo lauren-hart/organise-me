@@ -17,11 +17,3 @@ const Nav = () => {
 }
 
 export default Nav
-
-
-{/* <nav class='nav nav-pills flex-column flex-sm-row'>
-  <a class='flex-sm-fill text-sm-center nav-link active' href='#'>Active</a>
-  <a class='flex-sm-fill text-sm-center nav-link' href='#'>Link</a>
-  <a class='flex-sm-fill text-sm-center nav-link' href='#'>Link</a>
-  <a class='flex-sm-fill text-sm-center nav-link disabled' href='#'>Disabled</a>
-</nav> */}
