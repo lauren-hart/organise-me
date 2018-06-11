@@ -1,31 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Contact from './Contact'
+
 const Footer = () => {
   return (
     <div className='footer'>
 
-      <section id='message-me'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <div className='chat-blurb'>
-                <div className='title'><h2>Would you like to chat?</h2></div>
-
-                <p>Send me an email and we can talk.</p>
-
-                <p className='btn-hldr'>
-                  <a href='mailto:emilycoco@me.com' className='main-btn email-lnk'>
-                    <img className='email-img' src='/icons/email-icon.png' height='20px' />
-                    {' '} {' '} message me
-                    </a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contact />
 
       <div className='container-fluid'>
 
@@ -50,7 +32,7 @@ const Footer = () => {
 
 
             <div className='footer-item' id='text-link'>
-              <Link className='footer-link' to='/email-emily'>hire me</Link>
+              <a href='mailto:emilycoco@me.com' className='footer-link'>hire me</a>
             </div>
 
             <div className='footer-item' id='text-link'>
