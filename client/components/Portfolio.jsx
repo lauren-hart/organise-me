@@ -11,17 +11,16 @@ class Portfolio extends React.Component {
           <div className='page-title'>
             <h2>portfolio</h2>
           </div>
-        </div> 
+        </div>
 
         <div className='page-content'>
           <div className='page-content-blurb'>
-            <p>Here is a selection of work I have created</p>
-            <p>and also</p>
-            <p>side projects I am currently working on.</p>
+            <h2>What I've been doing</h2>
+            <p>Here is a selection of work I have created during my time at Enspiral Dev Academy and projects I am currently working on.</p>
           </div>
         </div >
 
-          <Works />
+        <Works />
 
       </div>
 
