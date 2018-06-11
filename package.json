@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/emilyparkes/emilycoco#readme",
   "scripts": {
-    "start": "node server/index",
+    "start": "node server/index & yarn build --watch",
     "dev": "nodemon --watch server & yarn build --watch",
     "build": "webpack --config ./client/webpack.config.js",
     "test": "jest test/client test/server"
