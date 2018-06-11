@@ -12,19 +12,22 @@ class Works extends React.Component {
             <div className='shot-info'>
               <h2>Mārama</h2>
               <h3>Full Stack Development</h3>
-              <p>Mārama is a web app I created as part of a final project at EDA. It's purpose is to ....</p>
+              <p>Mārama is a web app I created as part of a final project at Enspiral Dev Academy (EDA).
+                It's purpose is to be a centralised platform for study and funding opportunities available in Aotearoa.
+                I worked in a team of six to build Mārama in which we took part in all code of the project.</p>
+                <p>Te kete Mārama — to understand, to learn</p>
             </div>
           </div >
         </div >
 
-        <div id='work2' className='work-shots'>
+        <div id='event-app' className='work-shots'>
           <div className='container'>
             <div className='shot'>
               <img className='shot-img' src='images/graphic.jpg' /></div>
             <div className='shot-info'>
-              <h2>Work 2</h2>
+              <h2>Event App</h2>
               <h3>Full Stack Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut blandit nunc. Donec at enim tortor. Nullam ultricies porttitor velit, eget feugiat neque tempus eu. Vestibulum euismod consectetur magna. Vestibulum enim massa, accumsan et hendrerit sit amet, elementum nec urna. Nam vestibulum rhoncus orci, quis congue justo tempor sit amet. Vivamus egestas quam non congue pellentesque. Mauris in egestas urna. Phasellus velit quam, facilisis vitae enim ac, vestibulum suscipit enim.</p>
+              <p>I am currently working on a web and mobile app to see all publically hosted, and locally hosted events within Auckland. It is within early stages but I am excited to practice learning new skills, and building them into this app.</p>
             </div>
           </div >
         </div >
