@@ -192,6 +192,9 @@ a.logo-link {
   background-color: #74b9e8;
   border-radius: 5%;
 }
+.nav-link-individual-styling a:active {
+  color: cyan;
+}
 
 /* ABOUT */
 
@@ -209,10 +212,11 @@ a.logo-link {
   border: 4px;
 }
 
-.work-shots .shot {
-  max-width: 800px;
-  z-index: 990;
+.work-shots .shot-img-box {
+  max-width: 100%;
+  height: auto;
   text-align: center;
+  padding: 3.5em 1.5em 1.5em 1.5em;
   margin: 0 auto;
 }
 
@@ -226,7 +230,7 @@ a.logo-link {
   z-index: 990;
   text-align: center;
   color: azure;
-  padding: 2em;
+  padding: 2em 2em 3em 2em;
   margin: 0 auto;
 }
 
