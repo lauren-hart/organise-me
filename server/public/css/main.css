@@ -1,3 +1,44 @@
+/* RESPONSIVE MEDIA QUERIES */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  max-width: 750px; 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
+
+
+
 /* SITEWIDE STYLING */
 
 body {
@@ -34,7 +75,9 @@ a {
 .page-heading-section {
   justify-content: center;
   align-items: center;
-  margin: 0.5em 0 0.5em 0;
+  background-color: #5762D5;
+  padding: 10em 0 10em 0;
+  margin: 0em 0 0em 0;
 }
 
 .page-title {
@@ -61,8 +104,10 @@ a {
   padding: 0.5em;
 }
 
-/* .page-content {
-} */
+.page-content {
+  padding: 2em;
+  margin: auto;
+}
 
 /* .page-blurb {
 } */
@@ -71,8 +116,8 @@ a {
 
 button {
   color: white;
-  background-color: #7e9395;
-  box-shadow: 0 0 2px #7e9395;
+  background-color: #5762D5;
+  box-shadow: 0 0 2px #5762D5;
   letter-spacing: 1px;
   border: none;
   font-weight: 600;
@@ -85,37 +130,6 @@ button {
   margin-top: 35px;
 }
 
-/* Hover colour on generic buttons */
-button:hover {
-  background-color: #97b498;
-}
-
-
-/* RESPONSIVE - SCREEN SIZE CHANGES */
-
-/* @media only screen and (max-width: 750px) {
-  .page-section {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-  }
-}
-
-@media only screen and (min-width: 975px) {
-  .page-title-blurb {
-      max-width: 519px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .page-title-blurb {
-      margin-left: 0;
-      margin-right: 0;
-  }
-} */
-
-
 /* HEADER / NAV */
 
 .header {
@@ -124,25 +138,40 @@ button:hover {
   flex-wrap: nowrap;
   align-content: space-between;
   width: 100%;
-  background-color: #7e9395;
+  background-color: #5762D5;
   /* padding: 0.5em; */
 }
 
 .logo {
+  font-weight: bold;
+  justify-content: flex-start;
+  position: relative;
   float: left;
-  width: 50px;
-  height: 50px;
-  padding: 2px;
+  margin-left: 0.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a.logo-link {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  font-size: 13px;
+  padding: 10px;
+  margin: 3px;
 }
 
 .nav {
   width: 100%;
-  padding: 15px 0px 15px 0px;
+  padding: 10px 0px 10px 0px;
   margin-right: 20px;
 }
 
-.nav-links {
-  color: black;
+.nav-item {
   font-weight: bold;
   justify-content: flex-end;
   position: relative;
@@ -150,19 +179,21 @@ button:hover {
   margin-right: 0.5em;
 }
 
-.nav-link-individual-styling {
-  /* padding-bottom: 19px; */
+.nav-link {
+  color: #fff;
   font-size: 13px;
   letter-spacing: 2px;
   padding: 10px;
   margin: 3px;
 }
-
-.nav-link-individual-styling:hover {
+.nav-link:hover {
   /* theme 1 blue */
-  background-color: #97b498;
+  color: black;
+  background-color: #74b9e8;
   border-radius: 5%;
-  /* border-bottom: #c8e6c9 solid 3px; */
+}
+.nav-link-individual-styling a:active {
+  color: cyan;
 }
 
 /* ABOUT */
@@ -181,11 +212,17 @@ button:hover {
   border: 4px;
 }
 
-.work-shots .shot {
-  max-width: 800px;
-  z-index: 990;
+.work-shots .shot-img-box {
+  max-width: 100%;
+  height: auto;
   text-align: center;
+  padding: 3.5em 1.5em 1.5em 1.5em;
   margin: 0 auto;
+}
+
+.work-shots .shot-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .work-shots .shot-info {
@@ -193,7 +230,7 @@ button:hover {
   z-index: 990;
   text-align: center;
   color: azure;
-  padding: 2em;
+  padding: 2em 2em 3em 2em;
   margin: 0 auto;
 }
 
@@ -224,22 +261,6 @@ button:hover {
   vertical-align: middle;
 } */
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 
 /* CONTACT */
 
@@ -249,36 +270,32 @@ button:hover {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; --> this fixes footer links but de-centers message me */
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 2em;
   border: 4px;
 }
 
-.footer-contact {
-  background: white;
+#message-me {
   text-align: center;
-  font-size: 11px;
-  font-weight: bold;
-  max-width: 800px;
-  z-index: 990;
-  text-align: center;
-  padding: 2em;
-  margin: 0 auto;
+  padding: 1em 0 4em;
+  margin: auto;
 }
 
-#contact-emily h2 {
-  color: #1e836c;
-  text-align: center;
-  font-size: 3.8em;
+#message-me .row{
+  margin: auto;
+}
+
+.chat-blurb h2 {
+  color: #5762D5;
   font-weight: 400;
-  /* padding: 10px; */
+  font-size: 2.5em;
+  padding: 10px;
 }
 
-#contact-emily p {
+.chat-blurb p {
   font-size: 1.5em;
-  color: #45b29a;
+  color: #74b9e8;
 }
 
 /* p {
@@ -286,42 +303,90 @@ button:hover {
     font-weight: 300;
 } */
 
-.contact-button {
+
+/* .email-link {
+  width: 200px;
   text-align: center;
-  font-size: 11px;
-  font-weight: bold;
-  bottom: 0;
-  padding: 2em;
-  margin-bottom: 35px;
+} */
+
+/* BUTTON - MESSAGE ME */
+
+.btn-hldr .main-btn {
+  font-size: .8em;
+  text-align: center;
+  display: block;
+  position: relative;
+  background: #5762D5;
+  padding: .75em 2em .75em 3.5em;
+  color: white;
+  text-decoration: none;
+  margin: 1.5em 0 0;
+  border-radius: 3px;
+  font-weight: 400;
+  border: 0;
+}
+.btn-hldr .main-btn:hover {
+  color: #fff;
+  background-color: #74b9e8;
+  border-color: #f384aa;
 }
 
-.footer-colour-block {
-  background: #7e9395;
+.btn-hldr .main-btn .email-img {
+  position: absolute;
+  height: 20px;
+  width: 26px;
+  left: 11%;
+  top: 33%;
+}
+
+/* FOOTER COLOUR BLOCK */
+.container-fluid {
+  background: #5762D5;
   padding: 2em;
 }
 
-.footer-links {
+footer.row {
   flex-wrap: wrap;
-  flex-direction: row;
   text-align: center;
   align-content: space-between;
   color: white;
-  padding: 2em;
+  padding: 10px 0px 10px 0px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-#two.row {
-  height: 44px;
+.footer.justify-content-center {
+  margin: auto;
 }
 
-.footer-link-individual-styling {
-  padding: 1em;
+.footer-item {
+  position: relative;
+  margin: auto;
 }
-.footer-link-individual-styling a {
+
+#text-link.footer-item {
+  /* position: relative; */
+  padding-top: 10px;
+  /* margin: auto; */
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 0px 3px 0px 3px;
+}
+
+a.footer-link {
   color: white;
   padding: 1em;
 }
-.footer-link-individual-styling a:hover {
-  color: aqua;
+a.footer-link:hover {
+  color: black;
+  background-color: #74b9e8;
+  border-radius: 5%;
+  text-decoration: none;
 }
 
 .copyright {
@@ -331,6 +396,11 @@ button:hover {
 }
 .copyright a {
   color: white;
+  text-decoration: underline;
 }
-
-
+.copyright a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #74b9e8;
+  border-radius: 5%;
+}
