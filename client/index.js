@@ -6,11 +6,9 @@ import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-    <Provider store={store}>
       <Router>
         <App />
-      </Router>
-    </Provider>,
+      </Router>,
     document.getElementById('app')
   )
 })
