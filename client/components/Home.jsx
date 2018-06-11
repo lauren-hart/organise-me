@@ -11,6 +11,9 @@ class Home extends React.Component {
         <div className='page-heading-section'>
           <div className='page-title'>
             <h2>Welcome!</h2>
+            <p>I'm</p>
+            <p>emily coco</p>
+            <p>a full stack web developer</p>
           </div>
         </div> {/*page-heading-section-END */}
 
