@@ -1,66 +1,57 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Contact from './Contact'
+
 const Footer = () => {
   return (
     <div className='footer'>
 
-      <div id='contact-emily' className='footer-contact'>
-        <h2>Would you like to chat?</h2>
-        <p>Send me an email and we can talk.</p>
+      <Contact />
 
-          <button className='contact-button'>
-            <Link className='email-link' to='/email-emily'>
-              <img className='email-img' src='/icons/email-icon.png' height='20px' />
-              {' '} {' '} message me
-            </Link>
-          </button>
+      <div className='container-fluid'>
 
-      </div>
+        <footer className='row'>
+          <div className='footer justify-content-center'>
 
-      <div className='footer-colour-block'>
-        <div className='footer-links'>
+            <div className='footer-item'>
+              <div className='footer-link' >
+                <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src='/icons/linkedin-icon.png' height='40px' />
+                </a>
+              </div>
+            </div>
 
-          <div className='row' id='one'>
-          <span className='footer-link-individual-styling'>
-            <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
-              <img className='icon' src='/icons/linkedin-icon.png' height='40px' />
-            </a>
-          </span>
+            <div className='footer-item'>
+              <div className='footer-link'>
+                <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src='/icons/github-icon.png' height='40px' />
+                </a>
+              </div>
+            </div>
 
-          <span className='footer-link-individual-styling'>
-            <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
-              <img className='icon' src='/icons/github-icon.png' height='40px' />
-            </a>
-          </span>
+
+            <div className='footer-item' id='text-link'>
+              <a href='mailto:emilycoco@me.com' className='footer-link'>hire me</a>
+            </div>
+
+            <div className='footer-item' id='text-link'>
+              <Link className='footer-link' to='/resume'>resume</Link>
+            </div>
+
           </div>
-
-          <br />
-
-          <div className='row' id='two'>
-          <span className='footer-link-individual-styling'>
-            {/* link to contact page */}
-            <Link to='/email-emily'>hire me
-            </Link>
-          </span>
-
-          <span className='footer-link-individual-styling'>
-            <Link to='/resume'>resume
-            </Link>
-          </span>
-          </div>
-
-        </div>
+        </footer>
 
         <div className='copyright'>
           © {' '} 2018 {' '}
-          <Link to='/'>
+          <Link className='copyr-link' to='/'>
             emily coco
           </Link>.{' '}All rights reserved.
           </div>
-      </div>
 
-    </div >
+      </div >
+
+    </div>
   )
 }
 

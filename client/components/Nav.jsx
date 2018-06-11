@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <div className='nav'>
-      <div className='nav-links'>
-        <span className='nav-link-individual-styling'>
-          <Link to='/about'>about</Link>
-        </span>
-        <span className='nav-link-individual-styling'>
-          <Link to='/portfolio'>portfolio</Link>
-        </span>
-      </div>
-    </div>
+    <nav className='nav'>
+      <ul className='nav justify-content-end'>
+        <li className='nav-item'>
+          <Link className='nav-link active' to='/'>about</Link>
+        </li>
+        <li className='nav-item'>
+          <Link className='nav-link' to='/portfolio'>portfolio</Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
