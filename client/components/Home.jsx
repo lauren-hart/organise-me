@@ -8,18 +8,12 @@ class Home extends React.Component {
     return (
       <div className='page-section'>
 
-        <div className='page-heading-section'>
-          <div className='page-title'>
-            <h2>Welcome!</h2>
-            <p>I'm</p>
-            <p>emily coco</p>
-            <p>a full stack web developer</p>
+          <div className='page-hero'>
+            <img className='logo-hero' src='/images/hero-logo.png' height='100%'/>
           </div>
-        </div> {/*page-heading-section-END */}
 
         <About />
 
-        {/*page-section-END */}
       </div>
     )
   }
