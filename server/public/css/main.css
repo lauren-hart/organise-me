@@ -90,6 +90,20 @@ a {
   padding: 0.5em;
 }
 
+.page-hero {
+  text-align: center;
+  background-color: #5762D5;
+  padding: 0.5em 1em 2em 1em;
+}
+
+.page-hero .logo-hero {
+  width: 80%;
+  height: auto;
+  background-color: #5762D5;
+  padding: 0.5em 1em 2em 1em;
+  margin: auto;
+}
+
 /* title font */
 /* .page-title-font {
   font-size: 3.2em;
