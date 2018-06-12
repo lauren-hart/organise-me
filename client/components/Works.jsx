@@ -44,7 +44,6 @@ class Works extends React.Component {
           </div >
         </div >
 
-        {/* END-page-work */}
       </div>
     )
   }
