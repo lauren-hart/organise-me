@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
 
             <div className='footer-item' id='text-link'>
-              <a href='https://drive.google.com/file/d/1G7BgnMIAL_tRptClxHbiJbs25pXTCrWJ/view?usp=sharing' className='footer-link'>
+              <a href='https://drive.google.com/file/d/1weePoAGopj7HcO8DEe1mdQ0_hajKnTnE/view?usp=sharing' className='footer-link'>
                 resume pdf</a>
             </div>
 
