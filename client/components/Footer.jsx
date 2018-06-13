@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
 
             <div className='footer-item' id='text-link'>
-              <a href='https://drive.google.com/file/d/1weePoAGopj7HcO8DEe1mdQ0_hajKnTnE/view?usp=sharing' className='footer-link'>
+              <a href='https://drive.google.com/file/d/1weePoAGopj7HcO8DEe1mdQ0_hajKnTnE/view?usp=sharing' className='footer-link' target='_blank' rel="noopener noreferrer">
                 resume pdf</a>
             </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className='copyright'>
           © {' '} 2018 {' '}
-          <Link className='copyr-link' to='/'>
+          <Link to='/'>
             emily coco
           </Link>.{' '}All rights reserved.
           </div>
