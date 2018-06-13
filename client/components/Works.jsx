@@ -3,7 +3,7 @@ import React from 'react'
 class Works extends React.Component {
   render() {
     return (
-      <div className='page-porfolio'>
+      <div className='page-works'>
 
         <div id='marama' className='work-shots'>
           <div className='container'>
