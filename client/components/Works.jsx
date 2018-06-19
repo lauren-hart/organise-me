@@ -8,7 +8,7 @@ class Works extends React.Component {
         <div id='marama' className='work-shots'>
           <div className='container'>
             <div className='shot'>
-              <img className='shot-img' src='images/marama-browser.png' /></div>
+              <img className='shot-img' src='images/browser-marama.png' /></div>
             <div className='shot-info'>
               <h2>Mārama</h2>
               <h3>Full Stack Development</h3>

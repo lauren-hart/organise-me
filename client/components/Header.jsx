@@ -9,9 +9,9 @@ const Header = () => {
       <div className='logo justify-content-start'>
         <div className='logo-link' >
           <Link to='/'>
-            <img className='logo-img' src='/images/bw-logo.png' 
-            onMouseOver={e => (e.currentTarget.src = '/images/hover-bw-logo.png')}
-            onMouseOut={e => (e.currentTarget.src = '/images/bw-logo.png')} />
+            <img className='logo-img' src='/images/logo-bw.png' 
+            onMouseOver={e => (e.currentTarget.src = '/images/logo-hover-bw.png')}
+            onMouseOut={e => (e.currentTarget.src = '/images/logo-bw.png')} />
           </Link>
         </div>
       </div>
