@@ -17,9 +17,9 @@ const Footer = () => {
             <div className='footer-item'>
               <div className='footer-link' >
                 <a href='https://www.linkedin.com/in/emilyparkes/' target='_blank' rel="noopener noreferrer">
-                  <img className='icon' src='/icons/w-linkedin.png' height='40px'
-                  onMouseOver={e => (e.currentTarget.src = '/icons/hover-b-linkedin.png')}
-                  onMouseOut={e => (e.currentTarget.src = '/icons/w-linkedin.png')} />
+                  <img className='icon' src='/icons/linkedin-w.png' height='40px'
+                  onMouseOver={e => (e.currentTarget.src = '/icons/linkedin-hover-b.png')}
+                  onMouseOut={e => (e.currentTarget.src = '/icons/linkedin-w.png')} />
                 </a>
               </div>
             </div>
