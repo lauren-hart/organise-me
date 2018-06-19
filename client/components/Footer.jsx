@@ -27,9 +27,9 @@ const Footer = () => {
             <div className='footer-item'>
               <div className='footer-link'>
                 <a href='https://github.com/emilyparkes' target='_blank' rel="noopener noreferrer">
-                  <img className='icon' src='/icons/w-github.png' height='40px'
-                  onMouseOver={e => (e.currentTarget.src = '/icons/hover-b-github.png')}
-                  onMouseOut={e => (e.currentTarget.src = '/icons/w-github.png')} />
+                  <img className='icon' src='/icons/github-w.png' height='40px'
+                  onMouseOver={e => (e.currentTarget.src = '/icons/github-hover-b.png')}
+                  onMouseOut={e => (e.currentTarget.src = '/icons/github-w.png')} />
                 </a>
               </div>
             </div>

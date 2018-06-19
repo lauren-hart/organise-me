@@ -15,7 +15,7 @@ class Contact extends React.Component {
 
                 <p className='btn-hldr'>
                   <a href='mailto:emilycoco@me.com' className='main-btn email-lnk'>
-                    <img className='email-img' src='/icons/email-icon.png' height='20px' />
+                    <img className='email-img' src='/icons/icon-email.png' height='20px' />
                     {' '} {' '} message me
                     </a>
                 </p>
