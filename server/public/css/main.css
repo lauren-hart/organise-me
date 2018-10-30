@@ -47,15 +47,15 @@
   padding-top: 3rem
 }
 
-.about {
+.about-nav {
   background: #8F8681;
 }
 
-.experience {
+.experience-nav {
   background: #A67F78;
 }
 
-.projects {
+.projects-nav {
   background: #32435F;
 }
 
@@ -71,17 +71,17 @@
 button {
   font-weight: lighter;
   border: solid 1px white;
-  margin: 25% 10%;
   padding: 4%;
   font-size: 1rem;
   background: none;
   width: 60%;
   color: white;
+  margin-top: 2.5rem
 }
 
 button:hover {
   font-weight: lighter;
-  border: solid 1px white;
+  border: solid 1px #8F8681;
   margin: 25% 10%;
   padding: 4%;
   font-size: 1rem;
@@ -98,4 +98,13 @@ button:hover {
   letter-spacing: 0.2rem;
   color: black;
   padding-top: 1%
+}
+
+.about {
+background: #E1DCD9;
+padding: 3%;
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+line-height: 1.9rem
+
 }
