@@ -1,0 +1,24 @@
+{
+  "name": "lauren-hart",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "repository": "https://github.com/lauren-hart/lauren-hart.git",
+  "author": "Lauren Hart <laurenannehart@gmail.com>",
+  "license": "MIT",
+  "description": "Portfolio website to advertise myself and display my work.",
+  "scripts": {
+    "start": "node server/index & yarn build --watch",
+    "dev": "nodemon --watch server & yarn build --watch",
+    "build": "webpack --config ./client/webpack.config.js",
+    "test": "jest test/client test/server"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
