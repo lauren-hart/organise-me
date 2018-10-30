@@ -5,8 +5,7 @@ class Home extends React.Component {
   render () {
     return (
       <div>
-        <div className="bg-yellow"></div>
-        <h1>HI</h1>
+
       </div>
     )
   }

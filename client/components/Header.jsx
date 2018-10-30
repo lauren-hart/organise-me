@@ -3,8 +3,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='header'>
-    </div>
+    <header className="container-fluid header">
+      <h1 className="name-h1">Lauren Hart</h1>
+    </header>
   )
 }
 

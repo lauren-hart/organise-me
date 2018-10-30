@@ -1,3 +1,14 @@
+* { 
+  outline: 1px solid #947676 !important; 
+  } 
+  
+   * { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    }
+
 .bg-yellow {
   background-image: url("../images/yellow-bg.jpg");
   background-color: grey;
@@ -12,10 +23,28 @@
   background-size: cover !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: blur(0.7px) brightness(100%);
+  filter: blur(0.8px) brightness(100%);
   min-height: 100vh;
   height: 100%;
   width: 45%;
   display:flex;
   align-items: center;
+}
+
+.header {
+  background-image: url("../images/yellow-bg.jpg");
+  height: 150px;
+  opacity: 0.9;
+
+}
+
+.name-h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: black;
+  padding-top: 2rem
+
+
 }
