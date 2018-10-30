@@ -1,18 +1,18 @@
 {
-  "name": "emilycoco",
+  "name": "lauren-hart",
   "version": "1.0.0",
   "main": "server/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilyparkes/emilycoco.git"
+    "url": "git+https://github.com/lauren-hart/lauren-hart.git"
   },
-  "author": " <emilycoco@me.com>",
+  "author": " <laurenannehart@gmail.com>",
   "license": "MIT",
   "description": "Portfolio website to advertise myself and display my work.",
   "bugs": {
-    "url": "https://github.com/emilyparkes/emilycoco/issues"
+    "url": "https://github.com/lauren-hart/lauren-hart/issues"
   },
-  "homepage": "https://github.com/emilyparkes/emilycoco#readme",
+  "homepage": "https://github.com/lauren-hart/lauren-hart#readme",
   "scripts": {
     "start": "node server/index & yarn build --watch",
     "dev": "nodemon --watch server & yarn build --watch",

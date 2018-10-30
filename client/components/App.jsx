@@ -1,22 +1,19 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 
-import Header from './Header'
 import Home from './Home'
-import Portfolio from './Portfolio'
+import Header from './Header'
 import Footer from './Footer'
 
 class App extends React.Component {
-
   render () {
     return (
       <div className='app'>
         <Header />
-        
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/portfolio' component={Portfolio} />
-          </Switch>
+
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
 
         <Footer />
       </div>
