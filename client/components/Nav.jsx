@@ -6,13 +6,13 @@ class Nav extends React.Component {
     return (
       <div className="row nav">
         <div className="col-md-4 about nav-box">
-          <h4 className="nav-h4">about</h4>
+          <button className="nav-button">about</button>
         </div>
         <div className="col-md-4 experience nav-box">
-          <h4 className="nav-h4">experience</h4>
+          <button className="nav-button">experience</button>
         </div>
         <div className="col-md-4 projects nav-box">
-          <h4 className="nav-h4">projects</h4>
+          <button className="nav-button">projects</button>
         </div>
       </div>
     )
