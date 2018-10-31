@@ -113,13 +113,14 @@ font-family: 'Montserrat', sans-serif;
 font-size: 1rem;
 line-height: 1.9rem;
 width: 104%;
-margin-top: 490px;
+margin-top: 520px;
 margin-right: 0;
 margin-left: 0;
 }
 
 .about-h5 {
-  padding-bottom: 20px
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 li {
@@ -163,6 +164,19 @@ header {
   left: 0;
   z-index: 9999;
   width: 100%;
+}
+
+.links {
+  background: #E1DCD9;
+  color: #32435F;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.fa {
+  padding: 0 20px 15px 20px;
+  color: #32435F;
 }
 
 /* Large devices (desktops, 992px and up) */
