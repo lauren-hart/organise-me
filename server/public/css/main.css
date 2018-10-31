@@ -118,6 +118,11 @@ margin-right: 0;
 margin-left: 0;
 }
 
+.about-p {
+  border: solid 1px #32435F;
+  padding: 20px
+}
+
 .about-h5 {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -235,7 +240,7 @@ header {
   }
 
   .about {
-    margin-top: 230px;
+    margin-top: 250px;
     width: 102%
     }
 
