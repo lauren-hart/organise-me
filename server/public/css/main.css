@@ -184,6 +184,22 @@ header {
   color: #32435F;
 }
 
+.golf {
+  background-image: url("../images/golf.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+}
+
+.golf-h5 {
+  text-align: right;
+  padding-top: 140px;
+  padding-right: 20px;
+  letter-spacing: 2px
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .name-h1 {
