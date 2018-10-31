@@ -43,7 +43,20 @@
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   color: black;
-  padding-top: 3rem
+  padding-top: 2.0rem;
+  height: 130px
+}
+
+.title-h5 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: black;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  height: 60px;
+  margin: 0
 }
 
 .about-nav {
@@ -51,11 +64,11 @@
 }
 
 .experience-nav {
-  background: #A67F78;
+  background: #32435F;
 }
 
 .projects-nav {
-  background: #32435F;
+  background: #A67F78;
 }
 
 .nav-box {
@@ -65,6 +78,8 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
+    padding-top: 20px;
+    margin: 0
 }
 
 button {
@@ -82,81 +97,35 @@ button {
 button:hover {
   font-weight: lighter;
   border: solid 1px #8F8681;
-  margin-top: 2.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 4%;
   font-size: 1rem;
   background: white;
   width: 60%;
   color: #8F8681;
-  
-}
-
-.title-h5 {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  color: black;
-  padding-top: 1%
 }
 
 .about {
 background: #E1DCD9;
-padding: 3%;
+padding: 40px;
 font-family: 'Montserrat', sans-serif;
 font-size: 1rem;
 line-height: 1.9rem;
-margin: 0;
-width: 100%;
-margin-top: 30%
+width: 104%;
+margin-top: 490px;
+margin-right: 0;
+margin-left: 0;
 }
 
-
+.about-h5 {
+  padding-bottom: 20px
+}
 
 li {
-  list-style-type: armenian
+  list-style-type: disc;
+  padding: 2px
 }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  button {
-    font-weight: lighter;
-    border: solid 1px white;
-    padding: 4%;
-    font-size: 1rem;
-    background: none;
-    width: 60%;
-    color: white;
-    margin-top: 2.5rem
-  }
-  
-  button:hover {
-    font-weight: lighter;
-    border: solid 1px #8F8681;
-    margin-top: 2.5rem;
-    padding: 4%;
-    font-size: 1rem;
-    background: white;
-    width: 60%;
-    color: #8F8681;
-    
-  }
-}
-
-.coffee {
-  background-image: url("../images/coffee.jpeg");
-  background-color: grey;
-  background-size: cover !important;
-
-}
-
 
 .stack-list {
   background: #32435F;
@@ -165,31 +134,28 @@ li {
   text-transform: capitalize;
   letter-spacing: 0.2rem;
   text-align: left;
-  padding: 2%;
+  padding: 20px 70px;
   font-size: 0.9rem;
   margin: 0
+}
+
+.stack-h5 {
+  background: #32435F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: left;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  margin: 0;
+  width: 100%;
+  border-bottom: solid 1px white
 }
 
 .stack {
   width: 10%
 }
-
-
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  button {
-    width: 40%;
-  }
-  
-  button:hover {
-    width: 40%;    
-  }
-}
-
-/* No media query for `xs` since this is the default in Bootstrap */
-@media (max-width: 575.98px) {}
 
 header {
   position: fixed;
@@ -197,6 +163,119 @@ header {
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 50px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .name-h1 {
+    padding-top: 2.0rem;
+    height: 80px
+  }
+  
+  .title-h5 {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    height: 50px
+  }
+
+  .about {
+    margin-top: 230px;
+    width: 104%
+    }
+
+    .coffee {
+      background-image: url("../images/coffee.jpeg");
+      background-color: grey;
+      background-size: cover !important;
+    }
+
+    .stack-h5 {
+      visibility: hidden;
+      margin-top: -70px
+    }
+
+    .row-stack {
+      width: 103%
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about {
+    margin-top: 230px
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .name-h1 {
+    padding-top: 2.0rem;
+    height: 80px
+  }
+  
+  .title-h5 {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    height: 50px
+  }
+
+  .about {
+    margin-top: 230px;
+    width: 102%
+    }
+
+    .coffee {
+      background-image: url("../images/coffee.jpeg");
+      background-color: grey;
+      background-size: cover !important;
+    }
+
+    .stack-h5 {
+      visibility: hidden;
+      margin-top: -70px
+    }
+}
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* button {
+    width: 40%;
+    padding: 20px;    
+  }
+  
+  button:hover {
+    width: 40%;
+    padding: 20px;    
+  }
+  
+  .nav-box {
+    color: white;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0
+}
+
+.name-h1 {
+  height: 100px
+}
+
+.about {
+  margin-top: 460px
+} */
 
 }
+
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {}
+
+
