@@ -82,7 +82,7 @@ button {
 button:hover {
   font-weight: lighter;
   border: solid 1px #8F8681;
-  margin: 25% 10%;
+  margin-top: 2.5rem;
   padding: 4%;
   font-size: 1rem;
   background: white;
@@ -105,6 +105,87 @@ background: #E1DCD9;
 padding: 3%;
 font-family: 'Montserrat', sans-serif;
 font-size: 1rem;
-line-height: 1.9rem
+line-height: 1.9rem;
+margin: 0;
+width: 100%
+}
+
+
+
+li {
+  list-style-type: armenian
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  button {
+    font-weight: lighter;
+    border: solid 1px white;
+    padding: 4%;
+    font-size: 1rem;
+    background: none;
+    width: 60%;
+    color: white;
+    margin-top: 2.5rem
+  }
+  
+  button:hover {
+    font-weight: lighter;
+    border: solid 1px #8F8681;
+    margin-top: 2.5rem;
+    padding: 4%;
+    font-size: 1rem;
+    background: white;
+    width: 60%;
+    color: #8F8681;
+    
+  }
+}
+
+.coffee {
+  background-image: url("../images/coffee.jpeg");
+  background-color: grey;
+  background-size: cover !important;
 
 }
+
+
+.stack-list {
+  background: #32435F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  padding: 2%;
+  font-size: 0.9rem;
+  margin: 0
+}
+
+.stack {
+  width: 10%
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  button {
+    width: 40%;
+  }
+  
+  button:hover {
+    width: 40%;    
+  }
+}
+
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {}
