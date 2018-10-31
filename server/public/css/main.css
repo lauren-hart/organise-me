@@ -205,8 +205,10 @@ header {
 }
 
 .hobbies-h5 {
-  padding: 20px 0;
-  text-align: center
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: -15px;
+  margin-top: 15px
 }
 
 .travel {
@@ -267,6 +269,28 @@ header {
 
 .hobbies-images {
 justify-content: center
+}
+
+.experience {
+  background: #E1DCD9;
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  width: 104%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.eda-p {
+  border: solid 1px #32435F;
+  padding: 20px
+}
+
+.coffee {
+  background-image: url("../images/coffee.jpeg");
+  background-color: grey;
+  background-size: auto
 }
 
 /* Large devices (desktops, 992px and up) */
