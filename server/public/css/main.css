@@ -126,11 +126,13 @@ margin-left: 0;
 .about-h5 {
   padding-bottom: 20px;
   padding-top: 20px;
+  text-align: center
 }
 
 li {
   list-style-type: disc;
-  padding: 2px
+  padding: 2px;
+  margin-left: 40px
 }
 
 .stack-list {
@@ -152,9 +154,9 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   text-align: left;
-  padding: 20px 40px;
+  padding: 10px 0px 10px 30px;
   font-size: 1.1rem;
-  margin: 0;
+  margin: 0 0 15px -15px;
   width: 100%;
   border-bottom: solid 1px white
 }
@@ -191,13 +193,80 @@ header {
   width: 200px;
   height: 180px;
   color: white;
+  margin: 0.2%
+
 }
 
 .golf-h5 {
   text-align: right;
-  padding-top: 140px;
-  padding-right: 20px;
+  padding-top: 120px;
+  padding-right: 80px;
   letter-spacing: 2px
+}
+
+.hobbies-h5 {
+  padding: 20px 0;
+  text-align: center
+}
+
+.travel {
+  background-image: url("../images/travel.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+
+}
+
+.travel-h5 {
+  text-align: right;
+  padding-top: 60px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+  font-size: 1.1rem
+}
+
+.running {
+  background-image: url("../images/half-marathon.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+}
+
+.running-h5 {
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 10px;
+  letter-spacing: 2px;
+  font-size: 1.1rem
+}
+
+.snowboard {
+  background-image: url("../images/snowboard.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+
+}
+
+.snowboard-h5 {
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 55px;
+  letter-spacing: 2px;
+  font-size: 1.0rem
+}
+
+.hobbies-images {
+justify-content: center
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -224,14 +293,14 @@ header {
       background-size: cover !important;
     }
 
-    .stack-h5 {
-      visibility: hidden;
-      margin-top: -70px
-    }
-
     .row-stack {
       width: 103%
     }
+
+.hobbies-images {
+  justify-content: center;
+  padding: 2% 10%
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -266,10 +335,7 @@ header {
       background-size: cover !important;
     }
 
-    .stack-h5 {
-      visibility: hidden;
-      margin-top: -70px
-    }
+
 }
 
 
