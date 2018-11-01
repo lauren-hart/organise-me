@@ -12,7 +12,7 @@ class Home extends React.Component {
         <About />
         <Stack />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     )
   }

@@ -357,14 +357,20 @@ li {
 /* PROJECTS SECTION ----------------------------------- */
 
 .projects {
-background: #32435F;
-color: white;
+background: #E1DCD9;
+color: #32435F;
 font-family: 'Montserrat', sans-serif;
+flex-wrap: wrap;
+display: flex;
+}
+
+.row {
+  margin: 0
 }
 
 .project {
   border: solid 1px white;
-  margin: 20px
+  margin: 40px 20px 20px 20px;
 }
 
 .projects-h3 {
@@ -372,7 +378,13 @@ font-family: 'Montserrat', sans-serif;
   padding: 20px;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background: #32435F;
+  color: white;
+  margin-bottom: -8px
 }
 
 .projects-h4 {
@@ -393,6 +405,14 @@ font-family: 'Montserrat', sans-serif;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
   font-size: 0.9rem
+}
+
+.project-pic {
+}
+
+.project-heading {
+  flex-wrap: wrap;
+  display: flex; 
 }
 
 /* Large devices (desktops, 992px and up) -----------------------------------------------------------------------------------------*/

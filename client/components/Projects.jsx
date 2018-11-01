@@ -4,17 +4,21 @@ import React from 'react'
 class Projects extends React.Component {
   render () {
     return (
-      <div className="projects">
-        <h3 className="projects-h3">Projects</h3>
-        <div className="row">
+      <div>
+
+        <div className="project-heading">
+          <h3 className="projects-h3">Projects</h3>
+        </div>
+
+        <div className="row projects">
           <div className="col-md-4">
             <div className="project">
               <h4 className="projects-h4">Buy My Kai</h4>
               <p className="p-project">Buy My Kai is a web app that connects
               people through the food we grow in our backyard. <br /><br />
                It was the final group project I worked on
-               at EDA in a team of five. <br /> <br />
-               We completed a prototype and presented at Graduation. <br /> <br />
+               at EDA in a team of five. <br />< br />
+               We completed a prototype and presented at Graduation. <br />< br />
                We are looking to continue with the project and hope to
                deploy very soon.
               </p>
