@@ -39,7 +39,7 @@
 
 .header {
   background: #E1DCD9;
-  height: 200px;
+  height: 150;
   color: #32435F;
   position: fixed;
   top: 0;
@@ -53,9 +53,10 @@
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.6rem;
-  color: black;
-  padding-top: 2.0rem;
-  height: 130px
+  color: #32435F;
+  padding: 2.0rem 10px 0 10px;
+  height: 80px;
+  font-size: 2.2rem
 }
 
 .title-h5 {
@@ -63,14 +64,19 @@
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: black;
+  color: #32435F;
   padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  height: 60px;
+  padding-bottom: 0.5rem;
+  height: 40px;
   margin: 0
 }
 
 /* HEADER (NAV) ----------------------------------- */
+
+.nav {
+}
+
+.nav-mobile
 
 .about-nav {
   background: #8F8681;
@@ -127,6 +133,8 @@ button:hover {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+
 }
 
 .fa {
@@ -142,7 +150,7 @@ button:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.9rem;
-  margin-top: 520px;
+  margin-top: 450px;
   margin-right: 0;
   margin-left: 0;
   -webkit-background-size: cover;
@@ -435,6 +443,53 @@ display: flex;
   .header {
     width: 100%
   }
+
+  .about-nav {
+  background: #8F8681;
+}
+
+.experience-nav {
+  background: #32435F;
+}
+
+.projects-nav {
+  background: #A67F78;
+}
+
+.nav-box {
+    color: white;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0
+}
+
+button {
+  font-weight: lighter;
+  border: solid 1px white;
+  padding: 4%;
+  font-size: 1rem;
+  background: none;
+  width: 60%;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto
+  }
+
+button:hover {
+  font-weight: lighter;
+  border: solid 1px #8F8681;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4%;
+  font-size: 1rem;
+  background: white;
+  width: 60%;
+  color: #8F8681;
+}
 
 /* ABOUT ------------------------------------------ */
 
