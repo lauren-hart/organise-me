@@ -73,11 +73,6 @@
 
 /* HEADER (NAV) ----------------------------------- */
 
-.nav {
-}
-
-.nav-mobile
-
 .about-nav {
   background: #8F8681;
 }
@@ -92,7 +87,6 @@
 
 .nav-box {
     color: white;
-    height: 100px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -107,7 +101,7 @@ button {
   padding: 4%;
   font-size: 1rem;
   background: none;
-  width: 60%;
+  width: 30%;
   color: white;
   margin-top: auto;
   margin-bottom: auto
