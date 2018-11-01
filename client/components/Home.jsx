@@ -3,6 +3,7 @@ import React from 'react'
 import About from './About'
 import Stack from './Stack'
 import Experience from './Experience'
+import Projects from './Projects'
 
 class Home extends React.Component {
   render () {
@@ -11,6 +12,7 @@ class Home extends React.Component {
         <About />
         <Stack />
         <Experience />
+        <Projects />
       </div>
     )
   }

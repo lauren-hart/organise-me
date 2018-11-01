@@ -9,6 +9,8 @@
     box-sizing: border-box; 
     }
 
+/* Example to use for a background image to cover the whole page */
+
 .bg-yellow {
   background-image: url("../images/yellow-bg.jpg");
   background-color: grey;
@@ -31,10 +33,19 @@
   align-items: center;
 }
 
+/* MOBILE FIRST DESIGN ----------------------------------------------------------------------------------------------------------- */
+
+/* HEADER -------------------------------------- */
+
 .header {
   background: #E1DCD9;
   height: 200px;
-  color: #32435F
+  color: #32435F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
 .name-h1 {
@@ -58,6 +69,8 @@
   height: 60px;
   margin: 0
 }
+
+/* HEADER (NAV) ----------------------------------- */
 
 .about-nav {
   background: #8F8681;
@@ -106,16 +119,36 @@ button:hover {
   color: #8F8681;
 }
 
+/* CONTACT SECTION ----------------------------------- */
+
+.links {
+  background: #E1DCD9;
+  color: #32435F;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.fa {
+  padding: 0 20px 15px 20px;
+  color: #32435F;
+}
+
+/* ABOUT SECTION ----------------------------------- */
+
 .about {
-background: #E1DCD9;
-padding: 40px;
-font-family: 'Montserrat', sans-serif;
-font-size: 1rem;
-line-height: 1.9rem;
-width: 104%;
-margin-top: 520px;
-margin-right: 0;
-margin-left: 0;
+  background: #E1DCD9;
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  margin-top: 520px;
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
 }
 
 .about-p {
@@ -128,6 +161,103 @@ margin-left: 0;
   padding-top: 20px;
   text-align: center
 }
+
+/* HOBBIES SECTION ----------------------------------- */
+
+.hobbies-h5 {
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: -15px;
+  margin-top: 15px
+}
+
+
+.hobbies-images {
+  justify-content: center
+  }
+
+/* GOLF SECTION ----------------------------------- */
+
+.golf {
+  background-image: url("../images/golf.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+}
+
+.golf-h5 {
+  text-align: right;
+  padding-top: 120px;
+  padding-right: 80px;
+  letter-spacing: 2px
+}
+
+/* TRAVEL SECTION ----------------------------------- */
+
+.travel {
+  background-image: url("../images/travel.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+
+}
+
+.travel-h5 {
+  text-align: right;
+  padding-top: 60px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+  font-size: 1.1rem
+}
+
+
+/* RUNNING SECTION ----------------------------------- */
+
+.running {
+  background-image: url("../images/half-marathon.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+}
+
+.running-h5 {
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 10px;
+  letter-spacing: 2px;
+  font-size: 1.1rem
+}
+
+/* SNOWBOARD SECTION ----------------------------------- */
+
+.snowboard {
+  background-image: url("../images/snowboard.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+}
+
+.snowboard-h5 {
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 55px;
+  letter-spacing: 2px;
+  font-size: 1.0rem
+}
+
+/* STACK SECTION ----------------------------------- */
 
 li {
   list-style-type: disc;
@@ -165,111 +295,16 @@ li {
   width: 10%
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-}
+/* COFFEE SECTION ----------------------------------- */
 
-.links {
-  background: #E1DCD9;
-  color: #32435F;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.fa {
-  padding: 0 20px 15px 20px;
-  color: #32435F;
-}
-
-.golf {
-  background-image: url("../images/golf.png");
+.coffee {
+  background-image: url("../images/coffee.jpeg");
   background-color: grey;
-  background-size: cover !important;
-  width: 200px;
-  height: 180px;
-  color: white;
-  margin: 0.2%
-
+  background-size: auto
 }
 
-.golf-h5 {
-  text-align: right;
-  padding-top: 120px;
-  padding-right: 80px;
-  letter-spacing: 2px
-}
 
-.hobbies-h5 {
-  padding: 15px 0;
-  text-align: center;
-  margin-bottom: -15px;
-  margin-top: 15px
-}
-
-.travel {
-  background-image: url("../images/travel.png");
-  background-color: grey;
-  background-size: cover !important;
-  width: 200px;
-  height: 180px;
-  color: white;
-  margin: 0.2%
-
-}
-
-.travel-h5 {
-  text-align: right;
-  padding-top: 60px;
-  padding-right: 5px;
-  letter-spacing: 2px;
-  font-size: 1.1rem
-}
-
-.running {
-  background-image: url("../images/half-marathon.png");
-  background-color: grey;
-  background-size: cover !important;
-  width: 200px;
-  height: 180px;
-  color: white;
-  margin: 0.2%
-}
-
-.running-h5 {
-  text-align: right;
-  padding-top: 150px;
-  padding-right: 10px;
-  letter-spacing: 2px;
-  font-size: 1.1rem
-}
-
-.snowboard {
-  background-image: url("../images/snowboard.png");
-  background-color: grey;
-  background-size: cover !important;
-  width: 200px;
-  height: 180px;
-  color: white;
-  margin: 0.2%
-
-}
-
-.snowboard-h5 {
-  text-align: right;
-  padding-top: 150px;
-  padding-right: 55px;
-  letter-spacing: 2px;
-  font-size: 1.0rem
-}
-
-.hobbies-images {
-justify-content: center
-}
+/* EXPERIENCE SECTION ------------------------------------- */
 
 .experience {
   background: #E1DCD9;
@@ -282,19 +317,90 @@ justify-content: center
   margin-left: 0;
 }
 
+/* EDA SECTION ---------------------------------------------- */
+
 .eda-p {
   border: solid 1px #32435F;
-  padding: 20px
+  padding: 20px;
 }
 
-.coffee {
-  background-image: url("../images/coffee.jpeg");
+.eda-h3 {
+  text-align: center
+}
+
+/* WOMEN IN TECH SECTION ----------------------------------- */
+
+.women-p {
+  padding: 20px; 
+  text-align: center
+}
+
+.eda-pic {
+  background-image: url("../images/eda.png");
   background-color: grey;
-  background-size: auto
+  height: auto;
 }
 
-/* Large devices (desktops, 992px and up) */
+.eda-link {
+  padding-top: 20px
+}
+
+.a-eda {
+  color: #32435F;
+  text-decoration: underline;
+}
+
+.a-eda:hover {
+  color: #A67F78
+}
+
+/* PROJECTS SECTION ----------------------------------- */
+
+.projects {
+background: #32435F;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+
+.project {
+  border: solid 1px white;
+  margin: 20px
+}
+
+.projects-h3 {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-size: 1.5rem
+}
+
+.projects-h4 {
+  text-align: center;
+  padding: 20px 0px 5px 0;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.2rem;
+  border-bottom: solid 1px white;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.p-project {
+  text-align: left;
+  padding: 30px;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem
+}
+
+/* Large devices (desktops, 992px and up) -----------------------------------------------------------------------------------------*/
+
 @media (min-width: 992px) {
+
+/* HEADER ------------------------------------------ */
+
   .name-h1 {
     padding-top: 2.0rem;
     height: 80px
@@ -305,37 +411,66 @@ justify-content: center
     padding-bottom: 0.4rem;
     height: 50px
   }
+  
+  .header {
+    width: 100%
+  }
+
+/* ABOUT ------------------------------------------ */
 
   .about {
-    margin-top: 230px;
-    width: 104%
+    margin-top: 250px;
     }
 
-    .coffee {
-      background-image: url("../images/coffee.jpeg");
-      background-color: grey;
-      background-size: cover !important;
+/* HOBBIES ------------------------------------------ */
+
+  .hobbies-images {
+    justify-content: center;
+    padding: 2% 10%
     }
 
-    .row-stack {
-      width: 103%
+/* COFFEE ------------------------------------------ */
+
+  .coffee {
+    background-image: url("../images/coffee.jpeg");
+    background-color: grey;
+    background-size: cover !important;
+  }
+
+/* STACK ------------------------------------------ */
+
+  .row-stack {
+    width: 100%
+  }
+
+/* PROJECTS ------------------------------------------ */
+
+  .projects {
+    width: 100%
+  }
+
+/* EDA ------------------------------------------ */
+
+    .eda {
+   padding: 20px
     }
 
-.hobbies-images {
-  justify-content: center;
-  padding: 2% 10%
+/* WOMEN IN TECH ------------------------------------------ */
+
+  .women {
+    padding: 20px
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .about {
-    margin-top: 230px
+    margin-top: 250px
     }
 }
 
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) ---------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .name-h1 {
     padding-top: 2.0rem;
@@ -353,21 +488,14 @@ justify-content: center
     width: 102%
     }
 
-    .coffee {
-      background-image: url("../images/coffee.jpeg");
-      background-color: grey;
-      background-size: cover !important;
-    }
-
-
+  .coffee {
+    background-image: url("../images/coffee.jpeg");
+    background-color: grey;
+    background-size: cover !important;
+  }
 }
 
-
-
-
-
-
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) --------------------------------------------------------------------------------- */
 @media (min-width: 576px) {
   /* button {
     width: 40%;

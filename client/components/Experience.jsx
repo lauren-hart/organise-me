@@ -6,11 +6,7 @@ class Hobbies extends React.Component {
   render () {
     return (
       <div className="experience">
-        <div className="row">
-          <div className="col-md-6">
-            <EDA />
-          </div>
-        </div>
+        <EDA />
       </div>
     )
   }
