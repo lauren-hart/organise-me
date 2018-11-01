@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 const Header = () => {
   return (
-    <header className="container-fluid header">
+    <header className="header">
       <h1 className="name-h1">Lauren Hart</h1>
       <h5 className="title-h5">full stack developer</h5>
       <div className="row">

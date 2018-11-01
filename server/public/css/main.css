@@ -312,7 +312,7 @@ li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.9rem;
-  width: 104%;
+  width: 100%;
   margin-right: 0;
   margin-left: 0;
 }
@@ -420,6 +420,7 @@ font-family: 'Montserrat', sans-serif;
 
   .about {
     margin-top: 250px;
+    width: 50%;
     }
 
 /* HOBBIES ------------------------------------------ */
@@ -440,7 +441,11 @@ font-family: 'Montserrat', sans-serif;
 /* STACK ------------------------------------------ */
 
   .row-stack {
-    width: 100%
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 /* PROJECTS ------------------------------------------ */
@@ -465,7 +470,9 @@ font-family: 'Montserrat', sans-serif;
 /* Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .about {
-    margin-top: 250px
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
     }
 }
 
@@ -484,8 +491,8 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .about {
-    margin-top: 250px;
-    width: 102%
+    margin-top: 290px;
+    width: 100%
     }
 
   .coffee {
