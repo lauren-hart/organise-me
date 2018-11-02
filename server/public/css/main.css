@@ -1,5 +1,5 @@
 * { 
-  outline: 1px solid #947676 !important; 
+  outline: 1px transparent #947676 !important; 
   } 
   
    * { 
@@ -122,10 +122,6 @@ button:hover {
   background: white;
   width: 100%;
   color: #8F8681;
-}
-
-.col-md-4 {
-
 }
 
 /* CONTACT SECTION ----------------------------------- */
@@ -286,7 +282,7 @@ li {
   padding: 20px 70px;
   font-size: 0.9rem;
   margin: 0;
-  width: 100px
+  width: 100%
 }
 
 .stack-h5 {

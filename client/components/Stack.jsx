@@ -6,7 +6,7 @@ class Stack extends React.Component {
     return (
       <section>
         <div className="row-stack">
-          <ul className="col-md-4 stack-list">
+          <ul className="stack-list">
             <h5 className="stack-h5">stack</h5>
             <li>HTML</li>
             <li>CSS</li>
