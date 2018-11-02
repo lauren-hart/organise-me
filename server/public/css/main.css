@@ -492,6 +492,8 @@ button:hover {
     width: 50%;
     }
 
+
+
 /* HOBBIES ------------------------------------------ */
 
   .hobbies-images {
@@ -561,8 +563,21 @@ button:hover {
 
   .about {
     margin-top: 290px;
-    width: 100%
+    width: 100%;
+    justify-content: center
     }
+
+    .col-md-6 {
+      flex: 0;
+      max-width: 100%;
+    }
+
+    .hobbies {
+      margin-left: 50px;
+      margin-right: 50px
+    }
+
+    .
 
   .coffee {
     background-image: url("../images/coffee.jpeg");
