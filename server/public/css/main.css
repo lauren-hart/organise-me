@@ -1,5 +1,5 @@
 * { 
-  outline: 1px transparent #947676 !important; 
+  outline: 1px solid #947676 !important; 
   } 
   
    * { 
@@ -39,7 +39,6 @@
 
 .header {
   background: #E1DCD9;
-  height: 150;
   color: #32435F;
   position: fixed;
   top: 0;
@@ -54,9 +53,10 @@
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   color: #32435F;
-  padding: 2.0rem 10px 0 10px;
-  height: 80px;
-  font-size: 2.2rem
+  padding: 10px;
+  height: 60px;
+  font-size: 2.2rem;
+  margin: 0
 }
 
 .title-h5 {
@@ -65,10 +65,9 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #32435F;
-  padding-top: 0.4rem;
-  padding-bottom: 0.5rem;
   height: 40px;
-  margin: 0
+  margin: 0;
+  padding-bottom: 10px
 }
 
 /* HEADER (NAV) ----------------------------------- */
@@ -91,8 +90,14 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    padding-top: 20px;
-    margin: 0
+    padding-top: 15px;
+    margin: 0;
+    height: 60px;
+    position: relative;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
 }
 
 button {
@@ -101,7 +106,7 @@ button {
   padding: 4%;
   font-size: 1rem;
   background: none;
-  width: 30%;
+  width: 100%;
   color: white;
   margin-top: auto;
   margin-bottom: auto
@@ -115,8 +120,12 @@ button:hover {
   padding: 4%;
   font-size: 1rem;
   background: white;
-  width: 60%;
+  width: 100%;
   color: #8F8681;
+}
+
+.col-md-4 {
+
 }
 
 /* CONTACT SECTION ----------------------------------- */
@@ -126,13 +135,13 @@ button:hover {
   color: #32435F;
   width: 100%;
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 0;
+  height: 40px
 
 }
 
 .fa {
-  padding: 0 20px 15px 20px;
+  padding: 15px 20px;
   color: #32435F;
 }
 
@@ -140,11 +149,11 @@ button:hover {
 
 .about {
   background: #E1DCD9;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.9rem;
-  margin-top: 450px;
+  margin-top: 200px;
   margin-right: 0;
   margin-left: 0;
   -webkit-background-size: cover;
@@ -276,7 +285,8 @@ li {
   text-align: left;
   padding: 20px 70px;
   font-size: 0.9rem;
-  margin: 0
+  margin: 0;
+  width: 100px
 }
 
 .stack-h5 {
@@ -300,9 +310,10 @@ li {
 /* COFFEE SECTION ----------------------------------- */
 
 .coffee {
-  background-image: url("../images/coffee.jpeg");
+  /* background-image: url("../images/coffee.jpeg");
   background-color: grey;
-  background-size: auto
+  background-size: auto */
+  height: auto
 }
 
 
@@ -467,7 +478,7 @@ button {
   padding: 4%;
   font-size: 1rem;
   background: none;
-  width: 60%;
+  width: 50%;
   color: white;
   margin-top: auto;
   margin-bottom: auto
@@ -483,6 +494,11 @@ button:hover {
   background: white;
   width: 60%;
   color: #8F8681;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 /* ABOUT ------------------------------------------ */
@@ -504,9 +520,10 @@ button:hover {
 /* COFFEE ------------------------------------------ */
 
   .coffee {
-    background-image: url("../images/coffee.jpeg");
+    /* background-image: url("../images/coffee.jpeg");
     background-color: grey;
-    background-size: cover !important;
+    background-size: cover !important; */
+    height: auto
   }
 
 /* STACK ------------------------------------------ */
@@ -562,32 +579,130 @@ button:hover {
   }
 
   .about {
-    margin-top: 290px;
+    margin-top: 280px;
     width: 100%;
     justify-content: center
     }
 
     .col-md-6 {
-      flex: 0;
+      flex: 0 0 50%;
       max-width: 100%;
-    }
+  }
 
     .hobbies {
-      margin-left: 50px;
-      margin-right: 50px
+      margin-left: 0;
+      margin-right: 0
     }
 
-    .
+    .nav-box {
+      color: white;
+      height: 90px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      padding-top: 20px;
+      margin: 0
+  }
+  
+  button {
+    font-weight: lighter;
+    border: solid 1px white;
+    padding: 4%;
+    font-size: 1rem;
+    background: none;
+    width: 60%;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto
+    }
+  
+  button:hover {
+    font-weight: lighter;
+    border: solid 1px #8F8681;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 4%;
+    font-size: 1rem;
+    background: white;
+    width: 60%;
+    color: #8F8681;
+  }
+
+    
 
   .coffee {
     background-image: url("../images/coffee.jpeg");
     background-color: grey;
-    background-size: cover !important;
+    flex: 0;
+    max-width: 65% 
+  }
+
+  .stack-list.col-md-4 {
+    max-width: 100%;
+  }
+
+  li {
+    margin-left: -15px;
+    font-size: 0.8rem
+  }
+
+  .stack-h5 {
+    padding: 5px 10px 10px 15px;
+    font-size: 1.1rem;
+    margin: 0 0 15px -20px;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) --------------------------------------------------------------------------------- */
 @media (min-width: 576px) {
+
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 100%;
+    }
+
+    .about {
+      margin-top: 250px
+    }
+
+    .nav-box {
+      color: white;
+      height: 90px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      padding-top: 20px;
+      margin: 0
+  }
+  
+  button {
+    font-weight: lighter;
+    border: solid 1px white;
+    padding: 4%;
+    font-size: 1rem;
+    background: none;
+    width: 60%;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto
+    }
+  
+  button:hover {
+    font-weight: lighter;
+    border: solid 1px #8F8681;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 4%;
+    font-size: 1rem;
+    background: white;
+    width: 60%;
+    color: #8F8681;
+  }
+
+
+
   /* button {
     width: 40%;
     padding: 20px;    
@@ -608,6 +723,8 @@ button:hover {
     padding-top: 20px;
     margin: 0
 }
+
+
 
 .name-h1 {
   height: 100px
