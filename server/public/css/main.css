@@ -306,9 +306,7 @@ li {
 /* COFFEE SECTION ----------------------------------- */
 
 .coffee {
-  /* background-image: url("../images/coffee.jpeg");
-  background-color: grey;
-  background-size: auto */
+  width:  100%;
   height: auto
 }
 
@@ -393,7 +391,9 @@ display: flex;
   width: 100%;
   background: #32435F;
   color: white;
-  margin-bottom: -8px
+  margin-bottom: -8px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .projects-h4 {
@@ -416,21 +416,18 @@ display: flex;
   font-size: 0.9rem
 }
 
-.project-pic {
-}
-
 .project-heading {
   flex-wrap: wrap;
   display: flex; 
 }
 
-/* Large devices (desktops, 992px and up) -----------------------------------------------------------------------------------------*/
+/* Large devices (desktops, 992px and up) -----------------------------------------------------------------------------------------
 
 @media (min-width: 992px) {
 
 /* HEADER ------------------------------------------ */
 
-  .name-h1 {
+  /* .name-h1 {
     padding-top: 2.0rem;
     height: 80px
   }
@@ -495,74 +492,75 @@ button:hover {
 .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
-}
+} */
 
 /* ABOUT ------------------------------------------ */
 
-  .about {
+  /* .about {
     margin-top: 250px;
     width: 50%;
-    }
+    } */
 
 
 
 /* HOBBIES ------------------------------------------ */
 
-  .hobbies-images {
+  /* .hobbies-images {
     justify-content: center;
-    padding: 2% 10%
-    }
+    padding: 2% 10%;
+    margin: 0 15%
+    } */
 
 /* COFFEE ------------------------------------------ */
 
-  .coffee {
-    /* background-image: url("../images/coffee.jpeg");
+  /* .coffee {
+    background-image: url("../images/coffee.jpeg");
     background-color: grey;
-    background-size: cover !important; */
-    height: auto
-  }
+    background-size: cover !important;
+    height: auto;
+  } */
 
 /* STACK ------------------------------------------ */
 
-  .row-stack {
+  /* .row-stack {
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
 /* PROJECTS ------------------------------------------ */
 
-  .projects {
+  /* .projects {
     width: 100%
-  }
+  } */
 
 /* EDA ------------------------------------------ */
-
+/* 
     .eda {
    padding: 20px
-    }
+    } */
 
 /* WOMEN IN TECH ------------------------------------------ */
 
-  .women {
+  /* .women {
     padding: 20px
-  }
-}
+  } */
+
 
 /* Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
-  .about {
+  /* .about {
     margin-top: 250px;
     display: flex;
     flex-wrap: wrap;
-    }
+    } */
 }
 
 
 /* Medium devices (tablets, 768px and up) ---------------------------------------------------------------------------------------*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .name-h1 {
     padding-top: 2.0rem;
     height: 80px
@@ -580,14 +578,10 @@ button:hover {
     justify-content: center
     }
 
-    .col-md-6 {
-      flex: 0 0 50%;
-      max-width: 100%;
-  }
-
     .hobbies {
       margin-left: 0;
-      margin-right: 0
+      margin-right: 0;
+      margin: 20px
     }
 
     .nav-box {
@@ -625,13 +619,16 @@ button:hover {
     color: #8F8681;
   }
 
-    
-
   .coffee {
-    background-image: url("../images/coffee.jpeg");
     background-color: grey;
     flex: 0;
-    max-width: 65% 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    filter: blur(0.8px) brightness(100%);
+    max-width: 100vh;
   }
 
   .stack-list.col-md-4 {
@@ -648,10 +645,10 @@ button:hover {
     font-size: 1.1rem;
     margin: 0 0 15px -20px;
   }
-}
+} */
 
 /* Small devices (landscape phones, 576px and up) --------------------------------------------------------------------------------- */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
 
     .col-md-4 {
       flex: 0 0 33.333333%;
@@ -730,7 +727,7 @@ button:hover {
   margin-top: 460px
 } */
 
-}
+*/
 
 /* No media query for `xs` since this is the default in Bootstrap */
 @media (max-width: 575.98px) {}

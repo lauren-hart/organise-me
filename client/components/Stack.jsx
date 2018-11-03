@@ -26,7 +26,6 @@ class Stack extends React.Component {
             <li>VS Code</li>
             <li>Python</li>
           </ul>
-          <div className="col-md-8 coffee"></div>
           <img className="coffee" src="./images/coffee.jpeg" />
         </div>
       </section>
