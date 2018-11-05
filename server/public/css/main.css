@@ -138,6 +138,10 @@ button:hover {
   color: #32435F;
 }
 
+.fa:active {
+  color: white
+}
+
 /* ABOUT SECTION ----------------------------------- */
 
 .about {
@@ -418,12 +422,6 @@ display: flex;
   display: flex; 
 }
 
-/* Larger than mobile  ----------------------------------------------------------------------------------*/
-@media (min-width: 400px) {
-
-
-}
-
 /* Larger than phablet  ----------------------------------------------------------------------------------*/
 @media (min-width: 550px) {
   button {
@@ -446,9 +444,10 @@ display: flex;
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
-@media (min-width: 750px) {
-  button {
-    width: 70%
+@media (min-width: 700px) {
+  .hobbies {
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }
 
@@ -473,6 +472,20 @@ display: flex;
   .nav-box {
     height: 90px;
 }
+
+  .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 50%;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .hobbies {
+    margin: 2%
+  }
 }
 
 /* Larger than Desktop HD  ----------------------------------------------------------------------------------*/
