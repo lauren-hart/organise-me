@@ -501,6 +501,10 @@ display: flex;
   .about {
     margin-top: 220px
   }
+
+  .hobbies {
+    margin: 4%
+  }
 }
 
 
