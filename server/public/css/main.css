@@ -138,8 +138,8 @@ button:hover {
   color: #32435F;
 }
 
-.fa:active {
-  color: white
+.fa:hover {
+  color: #A67F78;
 }
 
 /* ABOUT SECTION ----------------------------------- */
@@ -441,14 +441,42 @@ display: flex;
   .nav-box {
     height: 80px;
 }
+
+  .hobbies {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .hobbies {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 18%;
+    margin-right: 18%;
   }
+
+  .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 50%;
+  }
+
+  /* .row-stack {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .stack-list {
+    max-width: 40%;
+    flex: 0 0 50%;
+  }
+
+  .coffee {
+    width: 60%;
+  } */
+  
+
+
+
 }
 
 /* Larger than desktop  ----------------------------------------------------------------------------------*/
@@ -486,6 +514,21 @@ display: flex;
   .hobbies {
     margin: 2%
   }
+
+  .stack-list {
+    max-width: 100%;
+    flex: 0 0 50%;
+  }
+
+  .coffee {
+    display: none;
+  }
+
+
+
+  
+
+
 }
 
 /* Larger than Desktop HD  ----------------------------------------------------------------------------------*/
@@ -505,6 +548,21 @@ display: flex;
   .hobbies {
     margin: 4%
   }
+
+    .row-stack {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .stack-list {
+    width: 50%
+    }
+
+  .coffee {
+    height: auto;
+    width: 50%;
+    display: initial;
+  } 
 }
 
 
