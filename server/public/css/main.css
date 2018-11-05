@@ -90,14 +90,12 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    padding-top: 15px;
     margin: 0;
     height: 60px;
     position: relative;
     width: 33.33333%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+
 }
 
 button {
@@ -108,15 +106,14 @@ button {
   background: none;
   width: 100%;
   color: white;
-  margin-top: auto;
-  margin-bottom: auto
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px
   }
 
 button:hover {
   font-weight: lighter;
   border: solid 1px #8F8681;
-  margin-top: auto;
-  margin-bottom: auto;
   padding: 4%;
   font-size: 1rem;
   background: white;
@@ -421,315 +418,77 @@ display: flex;
   display: flex; 
 }
 
-/* Large devices (desktops, 992px and up) -----------------------------------------------------------------------------------------
+/* Larger than mobile  ----------------------------------------------------------------------------------*/
+@media (min-width: 400px) {
 
-@media (min-width: 992px) {
 
-/* HEADER ------------------------------------------ */
+}
 
-  /* .name-h1 {
-    padding-top: 2.0rem;
-    height: 80px
-  }
+/* Larger than phablet  ----------------------------------------------------------------------------------*/
+@media (min-width: 550px) {
+  button {
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%
+    }
   
-  .title-h5 {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    height: 50px
+  button:hover {
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%
   }
+
+  .nav-box {
+    height: 80px;
+}
+}
+
+/* Larger than tablet  ----------------------------------------------------------------------------------*/
+@media (min-width: 750px) {
+  button {
+    width: 70%
+  }
+}
+
+/* Larger than desktop  ----------------------------------------------------------------------------------*/
+@media (min-width: 1000px) {
+  button {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 2%
+    }
   
-  .header {
-    width: 100%
+  button:hover {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 2%
   }
 
-  .about-nav {
-  background: #8F8681;
+  .nav-box {
+    height: 90px;
+}
 }
 
-.experience-nav {
-  background: #32435F;
-}
-
-.projects-nav {
-  background: #A67F78;
-}
-
-.nav-box {
-    color: white;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    padding-top: 20px;
-    margin: 0
-}
-
-button {
-  font-weight: lighter;
-  border: solid 1px white;
-  padding: 4%;
-  font-size: 1rem;
-  background: none;
-  width: 50%;
-  color: white;
-  margin-top: auto;
-  margin-bottom: auto
-  }
-
-button:hover {
-  font-weight: lighter;
-  border: solid 1px #8F8681;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 4%;
-  font-size: 1rem;
-  background: white;
-  width: 60%;
-  color: #8F8681;
-}
-
-.col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-} */
-
-/* ABOUT ------------------------------------------ */
-
-  /* .about {
-    margin-top: 250px;
-    width: 50%;
-    } */
-
-
-
-/* HOBBIES ------------------------------------------ */
-
-  /* .hobbies-images {
-    justify-content: center;
-    padding: 2% 10%;
-    margin: 0 15%
-    } */
-
-/* COFFEE ------------------------------------------ */
-
-  /* .coffee {
-    background-image: url("../images/coffee.jpeg");
-    background-color: grey;
-    background-size: cover !important;
-    height: auto;
-  } */
-
-/* STACK ------------------------------------------ */
-
-  /* .row-stack {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  } */
-
-/* PROJECTS ------------------------------------------ */
-
-  /* .projects {
-    width: 100%
-  } */
-
-/* EDA ------------------------------------------ */
-/* 
-    .eda {
-   padding: 20px
-    } */
-
-/* WOMEN IN TECH ------------------------------------------ */
-
-  /* .women {
-    padding: 20px
-  } */
-
-
-/* Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------- */
+/* Larger than Desktop HD  ----------------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
-  /* .about {
-    margin-top: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    } */
-}
-
-
-/* Medium devices (tablets, 768px and up) ---------------------------------------------------------------------------------------*/
-/* @media (min-width: 768px) {
-  .name-h1 {
-    padding-top: 2.0rem;
-    height: 80px
+  button {
+    width: 50%
   }
-  
-  .title-h5 {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    height: 50px
+
+  button:hover {
+    width: 50%
   }
 
   .about {
-    margin-top: 280px;
-    width: 100%;
-    justify-content: center
-    }
-
-    .hobbies {
-      margin-left: 0;
-      margin-right: 0;
-      margin: 20px
-    }
-
-    .nav-box {
-      color: white;
-      height: 90px;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      text-align: center;
-      padding-top: 20px;
-      margin: 0
+    margin-top: 220px
   }
-  
-  button {
-    font-weight: lighter;
-    border: solid 1px white;
-    padding: 4%;
-    font-size: 1rem;
-    background: none;
-    width: 60%;
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto
-    }
-  
-  button:hover {
-    font-weight: lighter;
-    border: solid 1px #8F8681;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 4%;
-    font-size: 1rem;
-    background: white;
-    width: 60%;
-    color: #8F8681;
-  }
-
-  .coffee {
-    background-color: grey;
-    flex: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    filter: blur(0.8px) brightness(100%);
-    max-width: 100vh;
-  }
-
-  .stack-list.col-md-4 {
-    max-width: 100%;
-  }
-
-  li {
-    margin-left: -15px;
-    font-size: 0.8rem
-  }
-
-  .stack-h5 {
-    padding: 5px 10px 10px 15px;
-    font-size: 1.1rem;
-    margin: 0 0 15px -20px;
-  }
-} */
-
-/* Small devices (landscape phones, 576px and up) --------------------------------------------------------------------------------- */
-/* @media (min-width: 576px) {
-
-    .col-md-4 {
-      flex: 0 0 33.333333%;
-      max-width: 100%;
-    }
-
-    .about {
-      margin-top: 250px
-    }
-
-    .nav-box {
-      color: white;
-      height: 90px;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      text-align: center;
-      padding-top: 20px;
-      margin: 0
-  }
-  
-  button {
-    font-weight: lighter;
-    border: solid 1px white;
-    padding: 4%;
-    font-size: 1rem;
-    background: none;
-    width: 60%;
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto
-    }
-  
-  button:hover {
-    font-weight: lighter;
-    border: solid 1px #8F8681;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 4%;
-    font-size: 1rem;
-    background: white;
-    width: 60%;
-    color: #8F8681;
-  }
-
-
-
-  /* button {
-    width: 40%;
-    padding: 20px;    
-  }
-  
-  button:hover {
-    width: 40%;
-    padding: 20px;    
-  }
-  
-  .nav-box {
-    color: white;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    padding-top: 20px;
-    margin: 0
 }
 
-
-
-.name-h1 {
-  height: 100px
-}
-
-.about {
-  margin-top: 460px
-} */
-
-*/
-
-/* No media query for `xs` since this is the default in Bootstrap */
-@media (max-width: 575.98px) {}
 
 
