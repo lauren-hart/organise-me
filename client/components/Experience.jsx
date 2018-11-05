@@ -1,12 +1,14 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import EDA from './EDA'
+// import {Link} from 'react-router-dom'
 
 class Hobbies extends React.Component {
   render () {
     return (
-      <div className="experience">
-        <EDA />
+      <div>
+        <div className="experience">
+          <EDA />
+        </div>
       </div>
     )
   }

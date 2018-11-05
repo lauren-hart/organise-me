@@ -76,7 +76,7 @@
   background: #8F8681;
 }
 
-.experience-nav {
+.contact-nav {
   background: #32435F;
 }
 
@@ -121,7 +121,7 @@ button:hover {
   color: #8F8681;
 }
 
-/* CONTACT SECTION ----------------------------------- */
+/* ICON SECTION ----------------------------------- */
 
 .links {
   background: #E1DCD9;
@@ -141,6 +141,25 @@ button:hover {
 .fa:hover {
   color: #A67F78;
 }
+
+/* CONTACT COMPONENT ----------------------------------- */
+
+.contact {
+  background: #E1DCD9;
+  padding: 20px 40px 40px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  margin-top: 230px;
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  height: 100vh
+}
+
 
 /* ABOUT SECTION ----------------------------------- */
 
