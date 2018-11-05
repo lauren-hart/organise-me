@@ -20,9 +20,7 @@ class Home extends React.Component {
 
   handleAbout () {
     this.setState({
-      about: true,
-      exp: false,
-      projects: false
+      about: true
     })
   }
 
@@ -68,6 +66,7 @@ class Home extends React.Component {
             </div>
           </div>
         </header>
+
 
         <About />
         <Stack />
