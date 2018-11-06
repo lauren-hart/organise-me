@@ -76,7 +76,7 @@
   background: #8F8681;
 }
 
-.experience-nav {
+.contact-nav {
   background: #32435F;
 }
 
@@ -121,7 +121,7 @@ button:hover {
   color: #8F8681;
 }
 
-/* CONTACT SECTION ----------------------------------- */
+/* ICON SECTION ----------------------------------- */
 
 .links {
   background: #E1DCD9;
@@ -141,6 +141,75 @@ button:hover {
 .fa:hover {
   color: #A67F78;
 }
+
+/* CONTACT COMPONENT ----------------------------------- */
+
+.contact {
+  background: #E1DCD9;
+  padding: 50px 40px 40px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  margin-top: 200px;
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  height: 100vh;
+
+}
+
+.contact-h3-1 {
+  background: #A67F78;
+  color: white;
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-h3-2 {
+  background: #32435F;
+  color: white;
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-img {
+  width:  100%;
+  height: auto
+}
+
+.contact-h4 {
+  font-size: 1.1rem
+}
+
+.contact-link {
+  color: #32435F;
+  text-decoration: underline
+}
+
+.contact-link:hover {
+  color: #A67F78
+}
+
+.contact-details {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  
+}
+
+.contact-box {
+  border: solid 1px #32435F;
+  margin: 20px 0;
+  padding: 10px;
+}
+
 
 /* ABOUT SECTION ----------------------------------- */
 
@@ -173,10 +242,12 @@ button:hover {
 /* HOBBIES SECTION ----------------------------------- */
 
 .hobbies-h5 {
-  padding: 15px 0;
+  padding-bottom: 40;
+  padding-top: 20px;
   text-align: center;
   margin-bottom: -15px;
-  margin-top: 15px
+  margin-top: -25px;
+
 }
 
 
@@ -370,6 +441,7 @@ color: #32435F;
 font-family: 'Montserrat', sans-serif;
 flex-wrap: wrap;
 display: flex;
+margin-top: 160px
 }
 
 .row {
@@ -383,18 +455,20 @@ display: flex;
 
 .projects-h3 {
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background: #32435F;
-  color: white;
+  color: #32435F;
   margin-bottom: -8px;
   font-family: 'Montserrat', sans-serif;
+}
 
+.project-full {
+  background: #E1DCD9;
 }
 
 .projects-h4 {
@@ -446,6 +520,20 @@ display: flex;
     margin-left: 4%;
     margin-right: 4%;
   }
+
+  .contact {
+    margin-top: 220px;
+  }
+
+  .contact-details {
+    flex-wrap: wrap;
+    display: flex; 
+    padding: 5px
+  }
+
+  .contact-h4 {
+    width: 30%
+  }
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
@@ -458,6 +546,15 @@ display: flex;
   .col-md-6 {
     max-width: 100%;
     flex: 0 0 50%;
+  }
+
+  .contact {
+    flex-wrap: flex;
+    display: flex;
+  }
+
+  .projects {
+    margin-top: 200px
   }
 
   /* .row-stack {

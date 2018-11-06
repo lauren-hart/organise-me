@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import About from './About'
 import Experience from './Experience'
 import Projects from './Projects'
@@ -13,31 +13,6 @@ class Home extends React.Component {
       exp: false,
       projects: false
     }
-    this.handleAbout = this.handleAbout.bind(this)
-    this.handleExp = this.handleExp.bind(this)
-    this.handleProjects = this.handleProjects.bind(this)
-  }
-
-  handleAbout () {
-    this.setState({
-      about: true
-    })
-  }
-
-  handleExp () {
-    this.setState({
-      exp: true,
-      about: false,
-      projects: false
-    })
-  }
-
-  handleProjects () {
-    this.setState({
-      projects: true,
-      about: false,
-      exp: false
-    })
   }
 
   render () {
@@ -56,22 +31,21 @@ class Home extends React.Component {
 
           <div className="nav row">
             <div className="col-md-4 about-nav nav-box">
-              <button onClick={this.handleAbout} className="nav-button">about</button>
+              <Link to="/"><button className="nav-button">home</button></Link>
+
             </div>
-            <div onClick={this.handleExp} className="col-md-4 experience-nav nav-box">
-              <button className="nav-button">experience</button>
+            <div className="col-md-4 contact-nav nav-box">
+              <Link to="/contact"><button className="nav-button">contact</button></Link>
             </div>
-            <div onClick={this.hanldeProjects} className="col-md-4 projects-nav nav-box">
-              <button className="nav-button">projects</button>
+            <div className="col-md-4 projects-nav nav-box">
+              <Link to="/projects"><button className="nav-button">projects</button></Link>
             </div>
           </div>
         </header>
 
-
         <About />
         <Stack />
         <Experience />
-        <Projects />
 
       </div>
 
