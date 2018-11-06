@@ -1,5 +1,5 @@
 * { 
-  outline: 1px transparent #947676 !important; 
+  outline: 1px solid #947676 !important; 
   } 
   
    * { 
@@ -146,18 +146,55 @@ button:hover {
 
 .contact {
   background: #E1DCD9;
-  padding: 20px 40px 40px 40px;
+  padding: 50px 40px 40px 40px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.9rem;
-  margin-top: 230px;
+  margin-top: 200px;
   margin-right: 0;
   margin-left: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover !important;
-  height: 100vh
+  height: 100vh;
+
+}
+
+.contact-h3-1 {
+  background: #A67F78;
+  color: white;
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-h3-2 {
+  background: #32435F;
+  color: white;
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-img {
+  width:  100%;
+  height: auto
+}
+
+.contact-h4 {
+  font-size: 1.2rem
+}
+
+.contact-link {
+  color: #32435F;
+  text-decoration: underline
+}
+
+.contact-link:hover {
+  color: #A67F78
 }
 
 
@@ -465,6 +502,20 @@ display: flex;
     margin-left: 4%;
     margin-right: 4%;
   }
+
+  .contact {
+    margin-top: 220px;
+  }
+
+  .contact-details {
+    flex-wrap: wrap;
+    display: flex; 
+    padding: 5px
+  }
+
+  .contact-h4 {
+    width: 30%
+  }
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
@@ -477,6 +528,11 @@ display: flex;
   .col-md-6 {
     max-width: 100%;
     flex: 0 0 50%;
+  }
+
+  .contact {
+    flex-wrap: flex;
+    display: flex;
   }
 
   /* .row-stack {

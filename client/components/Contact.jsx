@@ -22,7 +22,7 @@ class Contact extends React.Component {
 
             </div>
             <div className="col-md-4 contact-nav nav-box">
-              <Link to="/about"><button className="contact-button">about</button></Link>
+              <Link to="/contact"><button className="nav-button">contact</button></Link>
             </div>
             <div className="col-md-4 projects-nav nav-box">
               <Link to="/projects"><button className="nav-button">projects</button></Link>
@@ -30,7 +30,36 @@ class Contact extends React.Component {
           </div>
         </header>
         <div className="contact">
-          <h1>Contact</h1>
+
+          <div className="col-md-6">
+
+            <h3 className="contact-h3-1">Don't be a stranger </h3>
+            <h3 className="contact-h3-2">Say Hello!</h3>
+
+            <div className="contact-details">
+              <h4 className="contact-h4">email:</h4>
+              <p className="contact-p">laurenannehart@gmail.com</p>
+            </div>
+
+            <div className="contact-details">
+              <h4 className="contact-h4">mobile:</h4>
+              <p className="contact-p">022 5033 055</p>
+            </div>
+
+            <div className="contact-details">
+              <h4 className="contact-h4">LinkedIn:</h4>
+              <a href="https://www.linkedin.com/in/lauren-hart-01551620/" className="contact-link">connect</a>
+            </div>
+
+            <div className="contact-details">
+              <h4 className="contact-h4">github:</h4>
+              <a href="https://github.com/lauren-hart" className="contact-link">have a look!</a>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <img className="contact-img" src="./images/contact.jpg" />
+          </div>
+
         </div>
       </div>
     )
