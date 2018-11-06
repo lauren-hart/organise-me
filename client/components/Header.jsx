@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-import Nav from './Nav'
 
 const Header = () => {
   return (
@@ -14,7 +12,6 @@ const Header = () => {
           <a href="https://www.linkedin.com/in/lauren-hart-01551620/" className="fa fa-linkedin"></a>
         </div>
       </div>
-      <Nav />
     </header>
   )
 }

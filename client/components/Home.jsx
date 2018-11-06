@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import About from './About'
 import Experience from './Experience'
-import Projects from './Projects'
 import Stack from './Stack'
 
 class Home extends React.Component {
@@ -13,31 +12,6 @@ class Home extends React.Component {
       exp: false,
       projects: false
     }
-    this.handleAbout = this.handleAbout.bind(this)
-    this.handleExp = this.handleExp.bind(this)
-    this.handleProjects = this.handleProjects.bind(this)
-  }
-
-  handleAbout () {
-    this.setState({
-      about: true
-    })
-  }
-
-  handleExp () {
-    this.setState({
-      exp: true,
-      about: false,
-      projects: false
-    })
-  }
-
-  handleProjects () {
-    this.setState({
-      projects: true,
-      about: false,
-      exp: false
-    })
   }
 
   render () {
@@ -68,11 +42,9 @@ class Home extends React.Component {
           </div>
         </header>
 
-
         <About />
         <Stack />
         <Experience />
-        <Projects />
 
       </div>
 
