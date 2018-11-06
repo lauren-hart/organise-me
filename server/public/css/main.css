@@ -288,8 +288,8 @@ button:hover {
   background-image: url("../images/golf.png");
   background-color: grey;
   background-size: cover !important;
-  width: 200px;
-  height: 180px;
+  width: 260px;
+  height: 240px;
   color: white;
   margin: 0.2%
 }
@@ -307,8 +307,8 @@ button:hover {
   background-image: url("../images/travel.png");
   background-color: grey;
   background-size: cover !important;
-  width: 200px;
-  height: 180px;
+  width: 260px;
+  height: 240px;
   color: white;
   margin: 0.2%
 
@@ -329,8 +329,8 @@ button:hover {
   background-image: url("../images/half-marathon.png");
   background-color: grey;
   background-size: cover !important;
-  width: 200px;
-  height: 180px;
+  width: 260px;
+  height: 240px;
   color: white;
   margin: 0.2%
 }
@@ -349,8 +349,8 @@ button:hover {
   background-image: url("../images/snowboard.png");
   background-color: grey;
   background-size: cover !important;
-  width: 200px;
-  height: 180px;
+  width: 260px;
+  height: 240px;
   color: white;
   margin: 0.2%
 }
@@ -565,6 +565,49 @@ margin-top: 160px
   .cv {
     width: 60%
   }
+
+  /* GOLF SECTION ----------------------------------- */
+
+.golf {
+  background-image: url("../images/golf.png");
+  background-color: grey;
+  background-size: cover !important;
+  width: 200px;
+  height: 180px;
+  color: white;
+  margin: 0.2%
+}
+
+.golf-h5 {
+  text-align: right;
+  padding-top: 120px;
+  padding-right: 80px;
+  letter-spacing: 2px
+}
+
+/* HOBBIES PICS ----------------------------------- */
+
+.travel {
+  width: 200px;
+  height: 180px;
+}
+
+.running {
+  width: 200px;
+  height: 180px;
+}
+
+.golf {
+  width: 200px;
+  height: 180px;
+}
+
+.snowboard {
+  width: 200px;
+  height: 180px;
+}
+
+
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
