@@ -242,7 +242,7 @@ button:hover {
 .cv {
   background: #32435F;
   color: white;
-  width: 50%;
+  width: 80%;
   padding: 20px;
   text-transform: uppercase
 }
@@ -561,6 +561,10 @@ margin-top: 160px
   .contact-h4 {
     width: 30%
   }
+
+  .cv {
+    width: 60%
+  }
 }
 
 /* Larger than tablet  ----------------------------------------------------------------------------------*/
@@ -596,6 +600,9 @@ margin-top: 160px
     width: 60%;
   } */
   
+  .cv {
+    width: 50%
+  }
 
 
 
