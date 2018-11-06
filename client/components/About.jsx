@@ -9,7 +9,7 @@ class About extends React.Component {
         <div className="col-md-6">
           <h5 className="about-h5">about me</h5>
           <p className="about-p">
-                  I have recently graduated from <br />  
+                  I have recently graduated from <br />
             <a href="https://devacademy.co.nz/" className="contact-link">Enspiral Dev Academy</a>
             .<br />
                   I have a strong commercial
@@ -21,6 +21,8 @@ class About extends React.Component {
                   me to learn every day,  where I can see that the input
                   I'm giving is making an impact on users. < br />
                   I want to be part of a team that's proud of their work.< br />
+            <a className="a-cv" href="https://github.com/lauren-hart/CV-and-Bio/blob/master/Resume.pdf"><h5 className="cv">download my CV</h5></a>
+
           </p>
         </div>
         <div className="col-md-6">
