@@ -439,6 +439,7 @@ color: #32435F;
 font-family: 'Montserrat', sans-serif;
 flex-wrap: wrap;
 display: flex;
+margin-top: 160px
 }
 
 .row {
@@ -452,18 +453,20 @@ display: flex;
 
 .projects-h3 {
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background: #32435F;
-  color: white;
+  color: #32435F;
   margin-bottom: -8px;
   font-family: 'Montserrat', sans-serif;
+}
 
+.project-full {
+  background: #E1DCD9;
 }
 
 .projects-h4 {
@@ -546,6 +549,10 @@ display: flex;
   .contact {
     flex-wrap: flex;
     display: flex;
+  }
+
+  .projects {
+    margin-top: 200px
   }
 
   /* .row-stack {
