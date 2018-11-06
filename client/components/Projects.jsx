@@ -17,7 +17,7 @@ class Projects extends React.Component {
           </div>
 
           <div className="nav row">
-            <div className="col-md-4 about-nav nav-box">
+            <div className="col-md-4 home-nav nav-box">
               <Link to="/"><button className="nav-button">home</button></Link>
 
             </div>
