@@ -8,10 +8,26 @@ class Home extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      about: false,
-      exp: false,
+      home: false,
+      contact: false,
       projects: false
     }
+    this.handleContact = this.handleContact.bind(this)
+    this.handleHome = this.handleHome.bind(this)
+  }
+
+  handleContact () {
+    this.setState({
+      contact: true
+    })
+  }
+
+  handleHome () {
+    this.setState({
+      home: true,
+      contact: false,
+      projects: false
+    })
   }
 
   render () {
@@ -29,13 +45,20 @@ class Home extends React.Component {
           </div>
 
           <div className="nav row">
-            <div className="col-md-4 about-nav nav-box">
-              <Link to="/"><button className="nav-button">home</button></Link>
 
-            </div>
-            <div className="col-md-4 contact-nav nav-box">
-              <Link to="/contact"><button className="nav-button">contact</button></Link>
-            </div>
+            { this.state.home
+              ? <div className="col-md-4 about-nav nav-box">
+                <Link to="/"><button onClick={this.handleHome} className="nav-button-selected">home</button></Link>
+              </div> : <div className="col-md-4 about-nav nav-box">
+                <Link to="/"><button onClick={this.handleHome} className="nav-button">home</button></Link>
+              </div>}
+
+            { this.state.contact
+              ? <div className="col-md-4 contact-nav nav-box">
+                <Link to="/contact"><button onClick={this.handleContact} className="nav-button-selected">contact</button></Link>
+              </div> : <div className="col-md-4 contact-nav nav-box">
+                <Link to="/contact"><button onClick={this.handleContact} className="nav-button">contact</button></Link>
+              </div>}
             <div className="col-md-4 projects-nav nav-box">
               <Link to="/projects"><button className="nav-button">projects</button></Link>
             </div>
