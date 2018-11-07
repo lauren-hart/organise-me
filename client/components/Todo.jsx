@@ -4,11 +4,10 @@ import React from 'react'
 class Todo extends React.Component {
   render () {
     return (
-      <header>
-        <h1 className="organise-h1">organise me</h1>
-      </header>
+      <section className="todo">
+      </section>
 
     )
   }
 }
-export default Home
+export default Todo

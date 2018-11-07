@@ -44,6 +44,13 @@ header {
   padding: 20px
 }
 
+.todo {
+  background: white;
+  height: 700px;
+  opacity: 0.7;
+  margin: 50px
+}
+
 
 
 
