@@ -47,10 +47,18 @@ header {
 .todo {
   background: white;
   height: 700px;
-  opacity: 0.7;
+  opacity: 0.85;
   margin: 50px
 }
 
+/* HEADINGS */
+
+.med-heading {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem
+}
 
 
 

@@ -5,6 +5,7 @@ class Todo extends React.Component {
   render () {
     return (
       <section className="todo">
+        <h3 className="med-heading">to do</h3>
       </section>
 
     )
