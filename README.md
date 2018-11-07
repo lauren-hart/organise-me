@@ -1,2 +1,2 @@
-# lauren-hart
-An online version of my CV 
+# organise-me
+An application to organise my life
