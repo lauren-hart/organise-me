@@ -44,23 +44,28 @@ header {
   padding: 20px
 }
 
-.todo {
-  background: white;
-  height: 700px;
-  opacity: 0.85;
-  margin: 50px
-}
-
 /* HEADINGS */
 
 .med-heading {
   text-align: center;
-  font-family: 'Inconsolata', monospace;
   text-transform: uppercase;
   letter-spacing: 0.7rem
 }
 
+/* TO DO */
 
+.todo {
+  background: white;
+  height: 700px;
+  opacity: 0.85;
+  margin: 50px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.todo-input {
+  margin: 5% 20% 5% 20%;
+  padding: 1% 2%;
+}
 
 /* Larger than phablet ----------------------------------------------------------------------------------------------------------- */
 @media (min-width: 550px) {

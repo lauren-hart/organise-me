@@ -5,7 +5,8 @@ class Todo extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      input: ''
+      input: '',
+      submit: false
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -16,11 +17,18 @@ class Todo extends React.Component {
     })
   }
 
+  handleClick () {
+    this.setState({
+      submit: !this.state.submit
+    })
+  }
+
   render () {
     return (
       <section className="todo">
         <h3 className="med-heading">to do</h3>
-        <input onChange={this.handleChange}></input>
+        <input className="todo-input" onChange={this.handleChange}></input>
+        <button onClick={this.handleClick} className="add-todo">add</button>
       </section>
 
     )
