@@ -9,6 +9,8 @@ class Todo extends React.Component {
       submit: false
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    // this.sendTodo = this.sendTodo.bind(this)
   }
 
   handleChange (e) {
@@ -19,9 +21,14 @@ class Todo extends React.Component {
 
   handleClick () {
     this.setState({
-      submit: !this.state.submit
+      submitted: !this.state.submitted
     })
+    // this.sendTodo()
   }
+
+  // sendTodo () {
+  //   this.props.dispatch(addBet(this.state))
+  // }
 
   render () {
     return (
