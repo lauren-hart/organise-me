@@ -63,8 +63,21 @@ header {
 }
 
 .todo-input {
-  margin: 5% 20% 5% 20%;
-  padding: 1% 2%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.add-button {
+
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.add-todo {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Larger than phablet ----------------------------------------------------------------------------------------------------------- */

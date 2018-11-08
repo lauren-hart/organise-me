@@ -27,8 +27,10 @@ class Todo extends React.Component {
     return (
       <section className="todo">
         <h3 className="med-heading">to do</h3>
-        <input className="todo-input" onChange={this.handleChange}></input>
-        <button onClick={this.handleClick} className="add-todo">add</button>
+        <div className="add-todo">
+          <input className="todo-input" onChange={this.handleChange}></input>
+          <button onClick={this.handleClick} className="add-button">add</button>
+        </div>
       </section>
 
     )
