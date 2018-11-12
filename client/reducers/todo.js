@@ -6,7 +6,7 @@ import {
   from '../actions/todo'
 
 const defaultState = {
-  bets: null,
+  todo: null,
   error: null,
   pending: false
 }
