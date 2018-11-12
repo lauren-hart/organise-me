@@ -1,14 +1,14 @@
 import React from 'react'
-import {Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 import Home from './Home'
 
 class App extends React.Component {
   render () {
     return (
       <div className='app'>
-        <Switch>
+        <Router>
           <Route exact path='/' component={Home}/>
-        </Switch>
+        </Router>
       </div>
     )
   }
