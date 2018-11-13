@@ -1,17 +1,13 @@
 const path = require('path')
 const express = require('express')
-const bodyParser = require('body-parser')
 
-const todo = require('./routes/todo')
+const todos = require('./routes/todos')
 
 const server = express()
+
 server.use(express.static(path.join(__dirname, 'public')))
-server.use(bodyParser.json())
+server.use(express.json())
 
-server.use('/api/v1/todo', todo)
-
-// server.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public/index.html'))
-// })
+server.use('/api/v1/todos', todos)
 
 module.exports = server

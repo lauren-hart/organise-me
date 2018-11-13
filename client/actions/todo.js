@@ -1,34 +1,36 @@
 import request from 'superagent'
 
-export const GET_TODO_PENDING = 'GET_TODO_PENDING'
-export const GET_TODO = 'GET_TODO'
-export const GET_TODO_ERROR = 'GET_TODO_ERROR'
+export const GET_TODOS_PENDING = 'GET_TODOS_PENDING'
+export const GET_TODOS = 'GET_TODOS'
+export const GET_TODOS_ERROR = 'GET_TODOS_ERROR'
 
-export const getTodoPendng = () => ({type: GET_TODO_PENDING})
+export const getTodosPendng = () => ({type: GET_TODOS_PENDING})
 
-export const getTodoList = TODO => ({
-  type: GET_TODO,
-  TODO
+export const getTodosList = todos => ({
+  type: GET_TODOS,
+  todos
 })
 
-export const getTodoError = error => ({
-  type: GET_TODO_ERROR,
+export const getTodosError = error => ({
+  type: GET_TODOS_ERROR,
   error
 })
 
 // GET TODO
-export function getTodo () {
+export function getTodos () {
+  // eslint-disable-next-line no-console
+  console.log('action')
   return (dispatch) => {
-    dispatch(getTodoPendng())
+    dispatch(getTodosPendng())
     return request
-      .get(`/api/v1/todo`)
+      .get(`/api/v1/todos`)
       .then(res => {
-        dispatch(getTodoList(res.body.result))
+        dispatch(getTodosList(res.body.result))
         // eslint-disable-next-line no-console
         console.log('success')
       })
       .catch(err => {
-        dispatch(getTodoError(err.message))
+        dispatch(getTodosError(err.message))
       })
   }
 }
