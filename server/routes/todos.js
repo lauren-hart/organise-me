@@ -6,8 +6,6 @@ router.use(express.json())
 // GET ROUTES (get todos)
 
 router.get('/', (req, res) => {
-  // eslint-disable-next-line no-console
-  console.log('hitting route')
   db.getTodos()
     .then(result => {
       res.json({result})
