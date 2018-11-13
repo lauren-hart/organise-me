@@ -54,22 +54,22 @@ export function getTodos () {
 // }
 
 // ADD TODO
-// export function addTodo (todo) {
-//   return (dispatch) => {
-//     dispatch(getTodoPendng())
-//     return request
-//       .post(`/api/v1/todo/addtodo`, todo)
-//       .then(res => {
-//         dispatch(getTodoList(res.body.result))
-//         dispatch(getTodo())
-//         // eslint-disable-next-line no-console
-//         console.log('adding your todo')
-//       })
-//       .catch(err => {
-//         dispatch(getTodoError(err.message))
-//       })
-//   }
-// }
+export function addTodo (todo) {
+  return (dispatch) => {
+    dispatch(getTodosPendng())
+    return request
+      .post(`/api/v1/todo/addtodo`, todo)
+      .then(res => {
+        dispatch(getTodosList(res.body.result))
+        dispatch(getTodos())
+        // eslint-disable-next-line no-console
+        console.log('adding your todo')
+      })
+      .catch(err => {
+        dispatch(getTodosError(err.message))
+      })
+  }
+}
 
 // EDIT TODO
 // export function editTodo (todo, id) {
