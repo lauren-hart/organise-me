@@ -13,45 +13,45 @@ router.get('/', (req, res) => {
 })
 
 // DELETE ROUTES (delete todo by id)
-router.delete('/:id', (req, res) => {
-  const todoId = req.params.id
-  db.deleteTodos(todoId)
-    .then(() => {
-      res.json({})
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' +
-      err.message)
-    })
-})
+// router.delete('/:id', (req, res) => {
+//   const todoId = req.params.id
+//   db.deleteTodos(todoId)
+//     .then(() => {
+//       res.json({})
+//     })
+//     .catch(err => {
+//       res.status(500).send('DATABASE ERROR: ' +
+//       err.message)
+//     })
+// })
 
 // POST ROUTES (add new todo)
-router.post('/addtodo', (req, res) => {
-  const todo = req.body
-  db.addTodo(todo)
-    .then(() => {
-      res.sendStatus(200)
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' +
-      err.message)
-    })
-})
+// router.post('/addtodo', (req, res) => {
+//   const todo = req.body
+//   db.addTodo(todo)
+//     .then(() => {
+//       res.sendStatus(200)
+//     })
+//     .catch(err => {
+//       res.status(500).send('DATABASE ERROR: ' +
+//       err.message)
+//     })
+// })
 
 // PUT ROUTE (edit todo)
-router.put('/edittodo/:id', (req, res) => {
-  const id = req.params.id
-  const todo = req.body
-  db.editTodo(id, todo)
-    .then(todo => {
-    /* eslint-disable no-console */
-      console.log('sending back edited todo')
-      res.json({todo})
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' +
-      err.message)
-    })
-})
+// router.put('/edittodo/:id', (req, res) => {
+//   const id = req.params.id
+//   const todo = req.body
+//   db.editTodo(id, todo)
+//     .then(todo => {
+//     /* eslint-disable no-console */
+//       console.log('sending back edited todo')
+//       res.json({todo})
+//     })
+//     .catch(err => {
+//       res.status(500).send('DATABASE ERROR: ' +
+//       err.message)
+//     })
+// })
 
 module.exports = router

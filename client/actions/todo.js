@@ -34,55 +34,55 @@ export function getTodo () {
 }
 
 // DELETE TODO
-export function deleteTodo (id) {
-  return (dispatch) => {
-    dispatch(getTodoPendng())
-    return request
-      .delete(`/api/v1/todo/${id}`)
-      .then(res => {
-        dispatch(getTodoList(res.body.result))
-        dispatch(getTodo())
-        // eslint-disable-next-line no-console
-        console.log('deleting your todo')
-      })
-      .catch(err => {
-        dispatch(getTodoError(err.message))
-      })
-  }
-}
+// export function deleteTodo (id) {
+//   return (dispatch) => {
+//     dispatch(getTodoPendng())
+//     return request
+//       .delete(`/api/v1/todo/${id}`)
+//       .then(res => {
+//         dispatch(getTodoList(res.body.result))
+//         dispatch(getTodo())
+//         // eslint-disable-next-line no-console
+//         console.log('deleting your todo')
+//       })
+//       .catch(err => {
+//         dispatch(getTodoError(err.message))
+//       })
+//   }
+// }
 
 // ADD TODO
-export function addTodo (todo) {
-  return (dispatch) => {
-    dispatch(getTodoPendng())
-    return request
-      .post(`/api/v1/todo/addtodo`, todo)
-      .then(res => {
-        dispatch(getTodoList(res.body.result))
-        dispatch(getTodo())
-        // eslint-disable-next-line no-console
-        console.log('adding your todo')
-      })
-      .catch(err => {
-        dispatch(getTodoError(err.message))
-      })
-  }
-}
+// export function addTodo (todo) {
+//   return (dispatch) => {
+//     dispatch(getTodoPendng())
+//     return request
+//       .post(`/api/v1/todo/addtodo`, todo)
+//       .then(res => {
+//         dispatch(getTodoList(res.body.result))
+//         dispatch(getTodo())
+//         // eslint-disable-next-line no-console
+//         console.log('adding your todo')
+//       })
+//       .catch(err => {
+//         dispatch(getTodoError(err.message))
+//       })
+//   }
+// }
 
 // EDIT TODO
-export function editTodo (todo, id) {
-  return (dispatch) => {
-    dispatch(getTodoPendng())
-    return request
-      .put(`/api/v1/todo/edittodo/${id}`, todo)
-      .then(res => {
-        dispatch(getTodoList(res.body.result))
-        dispatch(getTodo())
-        // eslint-disable-next-line no-console
-        console.log('edited your todo')
-      })
-      .catch(err => {
-        dispatch(getTodoError(err.message))
-      })
-  }
-}
+// export function editTodo (todo, id) {
+//   return (dispatch) => {
+//     dispatch(getTodoPendng())
+//     return request
+//       .put(`/api/v1/todo/edittodo/${id}`, todo)
+//       .then(res => {
+//         dispatch(getTodoList(res.body.result))
+//         dispatch(getTodo())
+//         // eslint-disable-next-line no-console
+//         console.log('edited your todo')
+//       })
+//       .catch(err => {
+//         dispatch(getTodoError(err.message))
+//       })
+//   }
+// }
