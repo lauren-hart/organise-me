@@ -12,25 +12,26 @@ router.get('/', (req, res) => {
     })
 })
 
+// POST ROUTES (add new todo)
+router.post('/addtodo', (req, res) => {
+  console.log(req.body, 'routes todo')
+  const todo = req.body
+  db.addTodo(todo)
+    .then(() => {
+      res.sendStatus(200)
+    })
+    .catch(err => {
+      res.status(500).send('DATABASE ERROR: ' +
+      err.message)
+    })
+})
+
 // DELETE ROUTES (delete todo by id)
 // router.delete('/:id', (req, res) => {
 //   const todoId = req.params.id
 //   db.deleteTodos(todoId)
 //     .then(() => {
 //       res.json({})
-//     })
-//     .catch(err => {
-//       res.status(500).send('DATABASE ERROR: ' +
-//       err.message)
-//     })
-// })
-
-// POST ROUTES (add new todo)
-// router.post('/addtodo', (req, res) => {
-//   const todo = req.body
-//   db.addTodo(todo)
-//     .then(() => {
-//       res.sendStatus(200)
 //     })
 //     .catch(err => {
 //       res.status(500).send('DATABASE ERROR: ' +

@@ -3,9 +3,9 @@ const config = require('../knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getTodos
+  getTodos,
+  addTodo
   // deleteTodo,
-  // addTodo,
   // editTodo
 }
 
@@ -16,6 +16,15 @@ function getTodos (testDb) {
     .select()
 }
 
+// ADD todo to database
+function addTodo (todo, testDb) {
+  const db = testDb || connection
+  return db('todos')
+    .insert({
+      todo: todo
+    })
+}
+
 // DELETE todo from database by id
 // function deleteTodo (id, testDb) {
 //   const db = testDb || connection
@@ -24,14 +33,6 @@ function getTodos (testDb) {
 //     .del()
 // }
 
-// ADD todo to database
-// function addTodo (todo, testDb) {
-//   const db = testDb || connection
-//   return db('todos')
-//     .insert({
-//       todo: todo.todo
-//     })
-// }
 
 // PUT edit todo from database by id
 // function editTodo (id, todo, testDb) {

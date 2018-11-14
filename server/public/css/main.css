@@ -82,6 +82,11 @@ header {
   flex-wrap: wrap;
 }
 
+.todo-list {
+  margin-top: 30px
+}
+
+
 /* Larger than phablet ----------------------------------------------------------------------------------------------------------- */
 @media (min-width: 550px) {
   .todo {

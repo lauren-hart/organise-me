@@ -33,11 +33,11 @@ class Todo extends React.Component {
     this.setState({
       submitted: !this.state.submitted
     })
-    this.sendTodo(this.state.input)
+    this.sendTodo()
   }
 
-  sendTodo (todo) {
-    this.props.dispatch(addTodo(todo))
+  sendTodo () {
+    this.props.dispatch(addTodo(this.state.input))
   }
 
   render () {
@@ -45,10 +45,10 @@ class Todo extends React.Component {
       <section className="todo">
         <h3 className="med-heading">to do</h3>
         <div className="add-todo">
-          <input className="todo-input" onChange={this.handleChange}></input>
+          <input className="todo-input" placeholder="what to do?" name="todos" value={this.state.input} onChange={this.handleChange}></input>
           <button onClick={this.handleClick} className="add-button">add</button>
         </div>
-        <div>{this.props.todos && this.props.todos.map(item => {
+        <div className="todo-list">{this.props.todos && this.props.todos.map(item => {
           return <p key={item.id}>{item.todo}</p>
         })}</div>
       </section>

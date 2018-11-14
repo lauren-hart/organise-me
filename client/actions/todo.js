@@ -55,10 +55,11 @@ export function getTodos () {
 
 // ADD TODO
 export function addTodo (todo) {
+  console.log(todo, 'action')
   return (dispatch) => {
     dispatch(getTodosPendng())
     return request
-      .post(`/api/v1/todo/addtodo`, todo)
+      .post(`/api/v1/todos/addtodo`, {todo})
       .then(res => {
         dispatch(getTodosList(res.body.result))
         dispatch(getTodos())
