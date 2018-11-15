@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 })
 
 // POST ROUTES (add new todo)
-router.post('/addtodo', (req, res) => {
+router.post('/', (req, res) => {
   console.log(req.body, 'routes todo')
   const todo = req.body
   db.addTodo(todo)

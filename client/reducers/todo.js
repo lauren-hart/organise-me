@@ -6,12 +6,12 @@ import {
   from '../actions/todo'
 
 const defaultState = {
-  todos: null,
+  todo: null,
   error: null,
   pending: false
 }
 
-export default function (state = defaultState, {error, todos, type}) {
+export default function (state = defaultState, {error, todo, type}) {
   switch (type) {
     case GET_TODOS_PENDING:
       return Object.assign({}, state, {error: null, pending: true})
@@ -23,7 +23,7 @@ export default function (state = defaultState, {error, todos, type}) {
       // }
 
     case GET_TODOS:
-      return Object.assign({}, state, {error: null, pending: false, todos})
+      return Object.assign({}, state, {error: null, pending: false, todo})
 
       // return {
       //   ...state,
@@ -33,7 +33,7 @@ export default function (state = defaultState, {error, todos, type}) {
       // }
 
     case GET_TODOS_ERROR:
-      return Object.assign({}, state, {error, pending: false, todos: null})
+      return Object.assign({}, state, {error, pending: false, todo: null})
 
       // return {
       //   ...state,

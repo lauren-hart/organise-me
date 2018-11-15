@@ -18,10 +18,11 @@ function getTodos (testDb) {
 
 // ADD todo to database
 function addTodo (todo, testDb) {
+  console.log(todo, 'db')
   const db = testDb || connection
   return db('todos')
     .insert({
-      todo: todo
+      todo: todo.todo
     })
 }
 
@@ -32,7 +33,6 @@ function addTodo (todo, testDb) {
 //     .where('id', id)
 //     .del()
 // }
-
 
 // PUT edit todo from database by id
 // function editTodo (id, todo, testDb) {

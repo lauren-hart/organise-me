@@ -6,9 +6,9 @@ export const GET_TODOS_ERROR = 'GET_TODOS_ERROR'
 
 export const getTodosPendng = () => ({type: GET_TODOS_PENDING})
 
-export const getTodosList = todos => ({
+export const getTodosList = todo => ({
   type: GET_TODOS,
-  todos
+  todo
 })
 
 export const getTodosError = error => ({
@@ -59,7 +59,7 @@ export function addTodo (todo) {
   return (dispatch) => {
     dispatch(getTodosPendng())
     return request
-      .post(`/api/v1/todos/addtodo`, {todo})
+      .post(`/api/v1/todos`, todo)
       .then(res => {
         dispatch(getTodosList(res.body.result))
         dispatch(getTodos())

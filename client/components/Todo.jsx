@@ -7,9 +7,8 @@ class Todo extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      todos: '',
-      input: '',
-      submit: false
+      todo: '',
+      submitted: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleClick = this.handleClick.bind(this)
@@ -25,7 +24,7 @@ class Todo extends React.Component {
 
   handleChange (e) {
     this.setState({
-      input: e.target.value
+      [e.target.name]: e.target.value
     })
   }
 
@@ -37,7 +36,7 @@ class Todo extends React.Component {
   }
 
   sendTodo () {
-    this.props.dispatch(addTodo(this.state.input))
+    this.props.dispatch(addTodo(this.state))
   }
 
   render () {
@@ -45,10 +44,10 @@ class Todo extends React.Component {
       <section className="todo">
         <h3 className="med-heading">to do</h3>
         <div className="add-todo">
-          <input className="todo-input" placeholder="what to do?" name="todos" value={this.state.input} onChange={this.handleChange}></input>
+          <input className="todo-input" placeholder="what to do?" name="todo" value={this.state.todo} onChange={this.handleChange}></input>
           <button onClick={this.handleClick} className="add-button">add</button>
         </div>
-        <div className="todo-list">{this.props.todos && this.props.todos.map(item => {
+        <div className="todo-list">{this.props.todo && this.props.todo.map(item => {
           return <p key={item.id}>{item.todo}</p>
         })}</div>
       </section>
@@ -59,7 +58,7 @@ class Todo extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    todos: state.todo.todos
+    todo: state.todo.todo
   }
 }
 
