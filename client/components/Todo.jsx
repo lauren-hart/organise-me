@@ -37,6 +37,7 @@ class Todo extends React.Component {
 
   sendTodo () {
     this.props.dispatch(addTodo(this.state))
+    this.props.dispatch(getTodos())
   }
 
   render () {
@@ -48,8 +49,12 @@ class Todo extends React.Component {
           <button onClick={this.handleClick} className="add-button">add</button>
         </div>
         <div className="todo-list">{this.props.todo && this.props.todo.map(item => {
-          return <p key={item.id}>{item.todo}</p>
+          return <div className="todo-box" key={item.id}><p className="todo-p">{item.todo}</p>
+            <input type="checkbox" checked="checked" />
+            <span className="checkmark"></span>
+          </div>
         })}</div>
+
       </section>
 
     )
